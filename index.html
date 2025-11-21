@@ -185,34 +185,33 @@
                           <div style="background: rgba(255,107,107,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #ff0000;">
                               <h5 style="color: #ff0000; margin-bottom: 15px;"><strong>🎯 Phase 1 - 5</strong></h5>
                               <ul style="color: #000; line-height: 1.6;">
-                                  <li>**Protocol Understanding**
-                                  Map architecture, identify roles/permissions, and analyze upgradeability patterns.</li>
-                                  <li>Access control bypass and privilege escalation</li>
-                                  <li>Flash loan manipulation and economic exploits</li>
-                                  <li>Oracle manipulation and price feed attacks</li>
-                                  <li>Governance hijacking and voting manipulation</li>
+                                  <li>Manual review, map architecture, identify roles/permissions, and analyze upgradeability patterns.</li>
+                                  <li>Identify threat actors (MEV, Flash Loan attackers) and explicitly document/challenge trust assumptions.</li>
+                                  <li>Formally define measurable security invariants (Financial, Access Control, State Consistency).</li>
+                                  <li>Run automated tools, perform line-by-line manual review, search for known patterns, and implement Invariant-Based Fuzzing.</li>
+                                  <li>Fork-Based Exploit Testing for Critical/High findings, generating full exploit scripts and mainnet-fork transaction hashes. Rigorous false positive filtering.</li>
                               </ul>
                           </div>
 
                           <div style="background: rgba(102,126,234,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #0066ff;">
-                              <h5 style="color: #0066ff; margin-bottom: 15px;"><strong>🌐 Frontend Vectors (VG-200 to VG-305)</strong></h5>
+                              <h5 style="color: #0066ff; margin-bottom: 15px;"><strong>🎯 Phase 6 - 10 </strong></h5>
                               <ul style="color: #000; line-height: 1.6;">
-                                  <li>Web3 wallet integration vulnerabilities</li>
-                                  <li>Transaction manipulation and signature bypass</li>
-                                  <li>Cross-site scripting (XSS) and DOM attacks</li>
-                                  <li>Phishing resistance and domain security</li>
-                                  <li>Session hijacking and authentication flaws</li>
+                                  <li>Model the protocol's intended behavior using State-Machine Diagrams and Pre/Post Conditions to find specification gaps.</li>
+                                  <li>Analyze rational attacker incentives, arbitrage paths, Flash Loan profitability, and multi-step economic attacks.</li>
+                                  <li>Gas profiling, Unbounded Loop Detection, and identifying gas griefing DoS vectors.</li>
+                                  <li>Simulate multi-user interactions, race conditions (front-running), time-advanced scenarios, and stateful/stateless fuzzing.</li>
+                                  <li>Combining two or more lower-severity vulnerabilities to create a Critical attack chain, calculating combined impact and profit.</li>
                               </ul>
                           </div>
 
                           <div style="background: rgba(255,193,7,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #ff3333;">
-                              <h5 style="color: #ff3333; margin-bottom: 15px;"><strong>🔗 Advanced Vectors (VG-306 to VG-338)</strong></h5>
+                              <h5 style="color: #ff3333; margin-bottom: 15px;"><strong>🎯 Phase 11 - 15 </strong></h5>
                               <ul style="color: #000; line-height: 1.6;">
-                                  <li>Cross-chain bridge security exploits</li>
-                                  <li>MEV-based profit extraction attacks</li>
-                                  <li>State synchronization vulnerabilities</li>
-                                  <li>Economic manipulation through chained exploits</li>
-                                  <li>Supply chain and dependency attacks</li>
+                                  <li>Check for regressions, analyze new attack surfaces, and verify storage layout stability for upgradeable contracts.</li>
+                                  <li>Prove/disprove invariants using symbolic execution and formal verification for mathematical assurance.</li>
+                                  <li>Use a strict severity matrix and a comprehensive report template for all findings, including Root Cause, Impact, and Quantified Impact.</li>
+                                  <li>Final review of findings, severity reassessment, and a detailed coverage assessment (code, vulnerability, testing).</li>
+                                  <li>Generate Detailed Report and hand off to client for review and remediation.</li>
                               </ul>
                           </div>
                       </div>
