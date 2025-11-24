@@ -36,6 +36,51 @@
       .panel-text a {
         color: #000 !important;
       }
+      
+      /* Desktop layout for phases - vertical stack */
+      .phases-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+      }
+      
+      .phases-container > div {
+        width: 100% !important;
+      }
+      
+      /* Phase content horizontal layout */
+      .phase-content {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 15px !important;
+        align-items: flex-start !important;
+      }
+      
+      .phase-content > div {
+        flex: 1 1 auto;
+        padding: 10px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 8px;
+        min-width: 200px;
+      }
+      
+      /* Mobile and tablet layout for phases - vertical */
+      @media (max-width: 991px) {
+        .phases-container {
+          flex-direction: column !important;
+        }
+        .phases-container > div {
+          flex: 1 1 100% !important;
+          max-width: 100% !important;
+        }
+        .phase-content {
+          flex-direction: column !important;
+        }
+        .phase-content > div {
+          width: 100% !important;
+          min-width: unset !important;
+        }
+      }
     </style>
 
 
@@ -181,38 +226,68 @@
                   <div class="mbr-text mbr-fonts-style display-7" style="background: rgba(0,255,136,0.1); padding: 40px; border-radius: 15px; border: 2px solid #0066ff;">
                       <p style="font-size: 1.3em; margin-bottom: 30px; color: #000;"><strong>Our security assessments leverage the comprehensive VectorGuard 15-Phase Assessment covering the same techniques used in real-world exploits.</strong></p>
 
-                      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 30px 0;">
+                      <div class="phases-container">
                           <div style="background: rgba(255,107,107,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #ff0000;">
                               <h5 style="color: #ff0000; margin-bottom: 15px;"><strong>🎯 Phase 1 - 5</strong></h5>
-                              <ul style="color: #000; line-height: 1.6;">
-                                  <li>Manual review, map architecture, identify roles/permissions, and analyze upgradeability patterns.</li>
-                                  <li>Identify threat actors (MEV, Flash Loan attackers) and explicitly document/challenge trust assumptions.</li>
-                                  <li>Formally define measurable security invariants (Financial, Access Control, State Consistency).</li>
-                                  <li>Run automated tools, perform line-by-line manual review, search for known patterns, and implement Invariant-Based Fuzzing.</li>
-                                  <li>Fork-Based Exploit Testing for Critical/High findings, generating full exploit scripts and mainnet-fork transaction hashes. Rigorous false positive filtering.</li>
-                              </ul>
+                              <div class="phase-content">
+                                  <div>
+                                      <strong>1.</strong> Manual review, map architecture, identify roles/permissions, and analyze upgradeability patterns.
+                                  </div>
+                                  <div>
+                                      <strong>2.</strong> Identify threat actors (MEV, Flash Loan attackers) and explicitly document/challenge trust assumptions.
+                                  </div>
+                                  <div>
+                                      <strong>3.</strong> Formally define measurable security invariants (Financial, Access Control, State Consistency).
+                                  </div>
+                                  <div>
+                                      <strong>4.</strong> Run automated tools, perform line-by-line manual review, search for known patterns, and implement Invariant-Based Fuzzing.
+                                  </div>
+                                  <div>
+                                      <strong>5.</strong> Fork-Based Exploit Testing for Critical/High findings, generating full exploit scripts and mainnet-fork transaction hashes. Rigorous false positive filtering.
+                                  </div>
+                              </div>
                           </div>
 
                           <div style="background: rgba(102,126,234,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #0066ff;">
                               <h5 style="color: #0066ff; margin-bottom: 15px;"><strong>🎯 Phase 6 - 10 </strong></h5>
-                              <ul style="color: #000; line-height: 1.6;">
-                                  <li>Model the protocol's intended behavior using State-Machine Diagrams and Pre/Post Conditions to find specification gaps.</li>
-                                  <li>Analyze rational attacker incentives, arbitrage paths, Flash Loan profitability, and multi-step economic attacks.</li>
-                                  <li>Gas profiling, Unbounded Loop Detection, and identifying gas griefing DoS vectors.</li>
-                                  <li>Simulate multi-user interactions, race conditions (front-running), time-advanced scenarios, and stateful/stateless fuzzing.</li>
-                                  <li>Combining two or more lower-severity vulnerabilities to create a Critical attack chain, calculating combined impact and profit.</li>
-                              </ul>
+                              <div class="phase-content">
+                                  <div>
+                                      <strong>6.</strong> Model the protocol's intended behavior using State-Machine Diagrams and Pre/Post Conditions to find specification gaps.
+                                  </div>
+                                  <div>
+                                      <strong>7.</strong> Analyze rational attacker incentives, arbitrage paths, Flash Loan profitability, and multi-step economic attacks.
+                                  </div>
+                                  <div>
+                                      <strong>8.</strong> Gas profiling, Unbounded Loop Detection, and identifying gas griefing DoS vectors.
+                                  </div>
+                                  <div>
+                                      <strong>9.</strong> Simulate multi-user interactions, race conditions (front-running), time-advanced scenarios, and stateful/stateless fuzzing.
+                                  </div>
+                                  <div>
+                                      <strong>10.</strong> Combining two or more lower-severity vulnerabilities to create a Critical attack chain, calculating combined impact and profit.
+                                  </div>
+                              </div>
                           </div>
 
                           <div style="background: rgba(255,193,7,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #ff3333;">
                               <h5 style="color: #ff3333; margin-bottom: 15px;"><strong>🎯 Phase 11 - 15 </strong></h5>
-                              <ul style="color: #000; line-height: 1.6;">
-                                  <li>Check for regressions, analyze new attack surfaces, and verify storage layout stability for upgradeable contracts.</li>
-                                  <li>Prove/disprove invariants using symbolic execution and formal verification for mathematical assurance.</li>
-                                  <li>Use a strict severity matrix and a comprehensive report template for all findings, including Root Cause, Impact, and Quantified Impact.</li>
-                                  <li>Final review of findings, severity reassessment, and a detailed coverage assessment (code, vulnerability, testing).</li>
-                                  <li>Generate Detailed Report and hand off to client for review and remediation.</li>
-                              </ul>
+                              <div class="phase-content">
+                                  <div>
+                                      <strong>11.</strong> Check for regressions, analyze new attack surfaces, and verify storage layout stability for upgradeable contracts.
+                                  </div>
+                                  <div>
+                                      <strong>12.</strong> Prove/disprove invariants using symbolic execution and formal verification for mathematical assurance.
+                                  </div>
+                                  <div>
+                                      <strong>13.</strong> Use a strict severity matrix and a comprehensive report template for all findings, including Root Cause, Impact, and Quantified Impact.
+                                  </div>
+                                  <div>
+                                      <strong>14.</strong> Final review of findings, severity reassessment, and a detailed coverage assessment (code, vulnerability, testing).
+                                  </div>
+                                  <div>
+                                      <strong>15.</strong> Generate Detailed Report and hand off to client for review and remediation.
+                                  </div>
+                              </div>
                           </div>
                       </div>
 
