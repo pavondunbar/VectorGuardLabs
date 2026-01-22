@@ -1,988 +1,1122 @@
-  <!DOCTYPE html>
-  <html  >
-  <head>
-    <!-- Site made with Mobirise Website Builder v6.0.6, https://mobirise.com -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="Mobirise v6.0.6, mobirise.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <link rel="shortcut icon" href="assets/images/vectorguardlabs-128x128.png" type="image/x-icon">
-    <meta name="description" content="">
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v6.0.6, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v6.0.6, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/vectorguardlabs-128x128.png" type="image/x-icon">
+  <meta name="description" content="">
 
 
-    <title>Welcome to VectorGuard Labs!</title>
-    <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
-    <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="assets/web/assets/gdpr-plugin/gdpr-styles.css">
-    <link rel="stylesheet" href="assets/theme/css/style.css">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style"
-   onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" 
-  href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=2uwbVu"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=2uwbVu" 
-  type="text/css">
+  <title>Welcome to VectorGuard Labs!</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/web/assets/gdpr-plugin/gdpr-styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style"
+ onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet"
+href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=2uwbVu"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=2uwbVu"
+type="text/css">
 
-    <style>
-      body {
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
-        color: #fff !important;
-      }
-      .panel-title-edit, .panel-text {
-        color: #000 !important;
-      }
-      .panel-text a {
-        color: #000 !important;
-      }
-      
-      /* Desktop layout for phases - vertical stack */
+  <style>
+    body {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
+      color: #fff !important;
+    }
+    .panel-title-edit, .panel-text {
+      color: #000 !important;
+    }
+    .panel-text a {
+      color: #000 !important;
+    }
+
+    /* Desktop layout for phases - vertical stack */
+    .phases-container {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 20px !important;
+    }
+
+    .phases-container > div {
+      width: 100% !important;
+    }
+
+    /* Phase content horizontal layout */
+    .phase-content {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 15px !important;
+      align-items: flex-start !important;
+    }
+
+    .phase-content > div {
+      flex: 1 1 auto;
+      padding: 10px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+      min-width: 200px;
+    }
+
+    /* Mobile and tablet layout for phases - vertical */
+    @media (max-width: 991px) {
       .phases-container {
-        display: flex !important;
         flex-direction: column !important;
-        gap: 20px !important;
       }
-      
       .phases-container > div {
-        width: 100% !important;
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
       }
-      
-      /* Phase content horizontal layout */
       .phase-content {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        gap: 15px !important;
-        align-items: flex-start !important;
+        flex-direction: column !important;
       }
-      
       .phase-content > div {
-        flex: 1 1 auto;
-        padding: 10px;
-        background: rgba(255,255,255,0.1);
-        border-radius: 8px;
-        min-width: 200px;
+        width: 100% !important;
+        min-width: unset !important;
       }
-      
-      /* Mobile and tablet layout for phases - vertical */
-      @media (max-width: 991px) {
-        .phases-container {
-          flex-direction: column !important;
-        }
-        .phases-container > div {
-          flex: 1 1 100% !important;
-          max-width: 100% !important;
-        }
-        .phase-content {
-          flex-direction: column !important;
-        }
-        .phase-content > div {
-          width: 100% !important;
-          min-width: unset !important;
-        }
-      }
-    </style>
+    }
+
+    /* Pricing tier cards */
+    .pricing-tier-card {
+      border: 2px solid #0066ff;
+      border-radius: 15px;
+      padding: 30px;
+      margin-bottom: 25px;
+      background: rgba(0,102,255,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .pricing-tier-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,102,255,0.2);
+    }
+    .pricing-tier-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid rgba(0,102,255,0.3);
+    }
+    .pricing-tier-title {
+      color: #0066ff;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 0;
+    }
+    .pricing-tier-price {
+      color: #ff0000;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    .pricing-tier-hours {
+      background: rgba(0,255,136,0.2);
+      color: #000;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+    .pricing-tier-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .pricing-tier-features li {
+      color: #000;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+    }
+    .pricing-tier-features li:last-child {
+      border-bottom: none;
+    }
+    .pricing-tier-features li::before {
+      content: "✓";
+      color: #00ff88;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .pricing-tier-examples {
+      background: rgba(0,0,0,0.05);
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+    .pricing-tier-examples strong {
+      color: #0066ff;
+    }
+  </style>
+
+
+
+</head>
+<body>
+
+  <section data-bs-version="5.1" class="image3 cid-uPK8EquvUD" id="image3-h">
+
+
+
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-12">
+                <div class="image-wrapper">
+                    <img src="assets/images/vguard-1-1024x1024.png" alt="Mobirise Website Builder">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section data-bs-version="5.1" class="content5 cid-vectorguard-main" id="vectorguard-main" style="background: #fff; color: #000; padding: 80px 0;">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
 
+                <h1 class="mbr-section-title mbr-fonts-style mb-4 display-1" style="color: #000; text-align: center;"><strong>VectorGuard Labs: Adversarial Smart Contract Security</strong></h1>
+                <h3 class="mbr-section-subtitle mbr-fonts-style mb-5 display-5" style="color: #0066ff; text-align: center;"><strong>Adversarial Pre-Audit Security Assessments for Web3 Protocols</strong></h3>
 
+                <hr style="border: 2px solid #0066ff; margin: 40px 0;">
 
-  </head>
-  <body>
+                <h2 class="mbr-fonts-style mb-4 display-2" style="color: #000;"><strong>Why VectorGuard Labs Exists</strong></h2>
 
-    <section data-bs-version="5.1" class="image3 cid-uPK8EquvUD" id="image3-h">
+                <div class="mbr-text mbr-fonts-style display-7" style="background: rgba(0,0,0,0.1); padding: 30px; border-radius: 15px; margin-bottom: 40px;">
+                    <p style="font-size: 1.1em; line-height: 1.7; color: #000;">Web3 protocols are attacked by <strong>real adversaries</strong>: MEV searchers, flash loan attackers, oracle manipulators, governance abusers, and not by linters. Traditional audits often stop at static analysis, pattern matching, and PDF reports. They rarely behave like an attacker trying to <strong>break your protocol on a forked mainnet and prove it with a TX hash.</strong></p>
 
+                    <p style="font-size: 1.1em; line-height: 1.7; color: #000; margin-top: 20px;">VectorGuard Labs delivers <strong>adversarial pre-audit security assessments</strong> using its <strong>15-Phase Framework + 338-vector attack library</strong> to <strong>stress, break, and validate your protocol</strong> before you ever talk to a Tier-1 audit firm.</p>
+                </div>
 
+                <hr style="border: 2px solid #0066ff; margin: 40px 0;">
 
-
-
-      <div class="container-fluid">
-          <div class="row justify-content-center">
-              <div class="col-12 col-lg-12">
-                  <div class="image-wrapper">
-                      <img src="assets/images/vguard-1-1024x1024.png" alt="Mobirise Website Builder">
-
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-
-
-
-  <section data-bs-version="5.1" class="content5 cid-vectorguard-main" id="vectorguard-main" style="background: #fff; color: #000; padding: 80px 0;">
-
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-md-12 col-lg-10">
-
-                  <h1 class="mbr-section-title mbr-fonts-style mb-4 display-1" style="color: #000; text-align: center;"><strong>🚨 VectorGuard Labs: Adversarial Smart Contract Security</strong></h1>
-                  <h3 class="mbr-section-subtitle mbr-fonts-style mb-5 display-5" style="color: #0066ff; text-align: center;"><strong>Adversarial Pre-Audit Security Assessments for Web3 Protocols</strong></h3>
-
-                  <hr style="border: 2px solid #0066ff; margin: 40px 0;">
-
-                  <h2 class="mbr-fonts-style mb-4 display-2" style="color: #000;"><strong>Why VectorGuard Labs Exists</strong></h2>
-
-                  <div class="mbr-text mbr-fonts-style display-7" style="background: rgba(0,0,0,0.1); padding: 30px; border-radius: 15px; margin-bottom: 40px;">
-                      <p style="font-size: 1.1em; line-height: 1.7; color: #000;">Web3 protocols are attacked by <strong>real adversaries</strong>: MEV searchers, flash loan attackers, oracle manipulators, governance abusers, and not by linters. Traditional audits often stop at static analysis, pattern matching, and PDF reports. They rarely behave like an attacker trying to <strong>break your protocol on a forked mainnet and prove it with a TX hash.</strong></p>
-                      
-                      <p style="font-size: 1.1em; line-height: 1.7; color: #000; margin-top: 20px;">VectorGuard Labs delivers <strong>adversarial pre-audit security assessments</strong> using its <strong>15-Phase Framework + 338-vector attack library</strong> to <strong>stress, break, and validate your protocol</strong> before you ever talk to a Tier-1 audit firm.</p>
-                  </div>
-
-                  <hr style="border: 2px solid #0066ff; margin: 40px 0;">
-
-                  <h2 class="mbr-fonts-style mb-4 display-2" style="color: #000;"><strong>🔥 What Makes Us Different?</strong></h2>
-
-                  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 30px 0;">
-                      <div style="background: rgba(255,107,107,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #ff0000;">
-                          <h4 style="color: #ff0000; margin-bottom: 15px;"><strong>Adversarial, Evidence-First Mindset</strong></h4>
-                          <p style="color: #000; line-height: 1.6;">We don’t just “review code” - we <strong>attempt to break it</strong> using the VectorGuard Labs 15-phase methodology, then back every Critical/High finding with <strong>exploit scripts, execution traces, and attacker balance deltas.</strong></p>
-                      </div>
-
-                      <div style="background: rgba(102,126,234,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #0066ff;">
-                          <h4 style="color: #0066ff; margin-bottom: 15px;"><strong>338 Real-World Attack Vectors</strong></h4>
-                          <p style="color: #000; line-height: 1.6;">Reentrancy, MEV, oracle and bridge manipulation, governance capture, rounding and accounting drift, AA/EIP-4337, hooks, cross-chain desyncs, economic attacks, and more, <strong>modeled from billions of dollars in real exploits.</strong></p>
-                      </div>
-
-                      <div style="background: rgba(255,193,7,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #ff3333;">
-                          <h4 style="color: #ff3333; margin-bottom: 15px;"><strong>Exploit-Backed Findings</strong></h4>
-                          <p style="color: #000; line-height: 1.6;">Every meaningful finding includes <strong>root cause analysis, exploit narrative, reproduction steps, and (when feasible) a fork-based PoC</strong> that shows before/after balances, invariant violation, and protocol state diffs.</p>
-                      </div>
-
-                      <div style="background: rgba(46,204,113,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #00ff88;">
-                          <h4 style="color: #00ff88; margin-bottom: 15px;"><strong>Risk-Based, Time-Disciplined Execution</strong></h4>
-                          <p style="color: #000; line-height: 1.6;">We prioritize attack paths that can actually kill your protocol or users, combining automated tooling, invariant testing, and exploit development into a <strong>tight, goal-driven engagement window.</strong></p>
-                      </div>
-
-                      <div style="background: rgba(156,39,176,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #9c27b0;">
-                          <h4 style="color: #9c27b0; margin-bottom: 15px;"><strong>Pre-Audit, Not Audit</strong></h4>
-                          <p style="color: #000; line-height: 1.6;">We don’t compete with firms like Trail of Bits, OpenZeppelin, Certik, or Cyfrin. <strong>We prepare you for them</strong> so formal auditors see a hardened codebase, real exploit coverage, and a protocol that takes security seriously.</p>
-                      </div>
-                  </div>
-
-                  <hr style="border: 2px solid #0066ff; margin: 40px 0;">
-
-                  <h2 class="mbr-fonts-style mb-4 display-2" style="color: #000;"><strong>🧪 Our Validation & Exploit Approach</strong></h2>
-
-                  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 25px; margin: 30px 0;">
-                      <div style="background: rgba(0,0,0,0.1); padding: 25px; border-radius: 12px;">
-                          <h4 style="color: #0066ff; margin-bottom: 15px;"><strong>Semantic & Invariant-Driven Analysis</strong></h4>
-                          <p style="color: #000; line-height: 1.6;">We model what your protocol is supposed to do, then define <strong>hard invariants</strong> around solvency, share accounting, access control, cross-chain state, and economic safety and attempt to violate them.</p>
-                      </div>
-
-                      <div style="background: rgba(0,0,0,0.1); padding: 25px; border-radius: 12px;">
-                          <h4 style="color: #0066ff; margin-bottom: 15px;"><strong>Automated Analysis & Fuzzing</strong></h4>
-                          <p style="color: #000; line-height: 1.6;">Static analysis, mutation tests, symbolic execution, <strong>stateless and stateful fuzzing, property tests, and invariant tests</strong> across high-risk flows to push your contracts into weird, adversarial edge cases.</p>
-                      </div>
-
-                      <div style="background: rgba(0,0,0,0.1); padding: 25px; border-radius: 12px;">
-                          <h4 style="color: #0066ff; margin-bottom: 15px;"><strong>DeFi Attack Surface Coverage</strong></h4>
-                          <p style="color: #000; line-height: 1.6;">Coverage across lending, AMMs, vaults, staking, governance, liquidations, LSTs, AA, hooks, and bridges <strong>mirroring how real attackers chain protocols together</strong> for maximum impact.</p>
-                      </div>
-
-                      <div style="background: rgba(0,0,0,0.1); padding: 25px; border-radius: 12px;">
-                          <h4 style="color: #0066ff; margin-bottom: 15px;"><strong>Fork-Based Attack Simulation</strong></h4>
-                          <p style="color: #000; line-height: 1.6;">Where chains support it, we use <strong>mainnet forks</strong> (or their equivalents) to simulate attacks with real liquidity, oracle feeds, and gas constraints, capturing <strong>TX hashes and execution traces</strong> as proof.</p>
-                      </div>
-
-                      <div style="background: rgba(0,0,0,0.1); padding: 25px; border-radius: 12px;">
-                          <h4 style="color: #0066ff; margin-bottom: 15px;"><strong>Economic & Game-Theoretic Modeling</strong></h4>
-                          <p style="color: #000; line-height: 1.6;">We analyze <strong>profitability and incentives</strong> for rational attackers, flash loan windows, oracle manipulation profit, governance capture ROI, and long-horizon economic attacks.</p>
-                      </div>
-
-                      <div style="background: rgba(0,0,0,0.1); padding: 25px; border-radius: 12px;">
-                          <h4 style="color: #0066ff; margin-bottom: 15px;"><strong>Integration & Cross-Chain Risk</strong></h4>
-                          <p style="color: #000; line-height: 1.6;">We investigate how your protocol can be broken via <strong>integrated protocols, bridges, oracles, AA, and hooks</strong> not just within your own repo.</p>
-                      </div>
-                  </div>
-
-                  <hr style="border: 2px solid #0066ff; margin: 40px 0;">
-
-                  <h2 class="mbr-fonts-style mb-4 display-2" style="color: #000;"><strong>✅ Benefits for Your Protocol</strong></h2>
-
-                  <div class="mbr-text mbr-fonts-style display-7" style="background: rgba(0,255,136,0.1); padding: 30px; border-radius: 15px;">
-                      <ul style="color: #000; line-height: 1.8; font-size: 1.1em;">
-                          <li>Identify <strong>Critical and High impact paths</strong> that could realistically drain funds, corrupt state, or kill the protocol.</li>
-                          <li>Enter formal audits with <strong>fewer surprises, cleaner code, and exploit-backed pre-audit coverage</strong> reducing iteration and cost.</li>
-                          <li>Build <strong>real security credibility</strong> with investors, formal auditors, and users by demonstrating adversarial testing, not just “we were audited.”</li>
-                          <li>Receive <strong>concrete remediation guidance, exploit scripts, and invariants</strong> your team can harden against and reuse in future testing.</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-
-
-
-  <section data-bs-version="5.1" class="content5 cid-uOGHPepRXQ" id="content5-2" style="background: #fff; color: #000; padding: 80px 0;">
-
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-md-12 col-lg-10">
-
-                  <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-2" style="color: #0066ff;"><strong>🔥 The VectorGuard Labs 338-Vector Attack Framework</strong></h4>
-                  <div class="mbr-text mbr-fonts-style display-7" style="background: rgba(0,255,136,0.1); padding: 40px; border-radius: 15px; border: 2px solid #0066ff;">
-                      <p style="font-size: 1.3em; margin-bottom: 30px; color: #000;"><strong>Our pre-audit assessments are driven by the VectorGuard Pro 15-Phase Framework and a 338-vector attack library built from real exploits, not theory.</strong></p>
-
-                      <div class="phases-container">
-                          <div style="background: rgba(255,107,107,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #ff0000;">
-                              <h5 style="color: #ff0000; margin-bottom: 15px;"><strong>🎯 Phase 1 - 5</strong></h5>
-                              <div class="phase-content">
-                                  <div>
-                                      <strong>1.</strong> Manual review, map architecture, identify roles/permissions, and analyze upgradeability patterns to understand how value and authority flow through the system.
-                                  </div>
-                                  <div>
-                                      <strong>2.</strong> Identify threat actors (MEV, flash loan attackers, malicious integrators) and explicitly document and <strong>challenge all trust assumptions.</strong>
-                                  </div>
-                                  <div>
-                                      <strong>3.</strong> Formally define measurable security invariants (Financial, Access Control, State Consistency, Cross-Chain, Governance) that must never be violated.
-                                  </div>
-                                  <div>
-                                      <strong>4.</strong> Run automated tools, perform line-by-line manual review, hunt for known vulnerability classes, and implement invariant-based fuzzing to expose hidden paths to invariant breaks.
-                                  </div>
-                                  <div>
-                                      <strong>5.</strong> Fork-based (or chain-appropriate) exploit testing for Critical/High findings, generating full exploit scripts and transaction identifiers with attacker balance deltas, state diffs, and rigorous false positive filtering.
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div style="background: rgba(102,126,234,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #0066ff;">
-                              <h5 style="color: #0066ff; margin-bottom: 15px;"><strong>🎯 Phase 6 - 10 </strong></h5>
-                              <div class="phase-content">
-                                  <div>
-                                      <strong>6.</strong> Model the protocol's intended behavior using functional specifications, state-machine diagrams, and Pre/Post Conditions to expose spec gaps and mismatches with the code.
-                                  </div>
-                                  <div>
-                                      <strong>7.</strong> Analyze rational attacker incentives, arbitrage paths, flash loan profitability, and multi-step economic attacks to determine which exploits are truly viable and profitable.
-                                  </div>
-                                  <div>
-                                      <strong>8.</strong> Perform gas profiling, unbounded loop detection, and gas-griefing analysis to identify DoS and griefing vectors that can make your protocol unusable or ungovernable.
-                                  </div>
-                                  <div>
-                                      <strong>9.</strong> Simulate multi-user interactions, race conditions (front-running/back-running), time-advanced scenarios, and use stateful/stateless fuzzing to recreate complex real-world dynamics.
-                                  </div>
-                                  <div>
-                                      <strong>10.</strong> Combine two or more vulnerabilities or “low-risk” issues into <strong>full red-team attack chains</strong> that can escalate to Critical impact, including profit and feasibility calculations.
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div style="background: rgba(255,193,7,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #ff3333;">
-                              <h5 style="color: #ff3333; margin-bottom: 15px;"><strong>🎯 Phase 11 - 15 </strong></h5>
-                              <div class="phase-content">
-                                  <div>
-                                      <strong>11.</strong> Verify fixes, check for regressions, analyze new attack surfaces introduced by changes, and confirm storage layout stability for upgradeable contracts.
-                                  </div>
-                                  <div>
-                                      <strong>12.</strong> Prove/disprove critical properties using formal techniques (symbolic execution, property-based testing, and assertions) for mathematical-style assurance where appropriate.
-                                  </div>
-                                  <div>
-                                      <strong>13.</strong> Apply a strict severity classification and reporting standard, documenting each finding with root cause, exploitability, impact, and quantified risk where possible.
-                                  </div>
-                                  <div>
-                                      <strong>14.</strong> Perform a final coverage and risk review—reassessing severities, cross-checking attack surfaces, and ensuring the assessment maps clearly to your protocol’s threat model.
-                                  </div>
-                                  <div>
-                                      <strong>15.</strong> Generate a detailed, adversarially-informed report bundle and hand off to your team as a <strong>pre-audit hardening package</strong> to prepare for formal third-party audits.
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div style="text-align: center; margin-top: 40px; padding: 30px; background: rgba(0,255,136,0.1); border-radius: 10px;">
-                          <h5 style="color: #0066ff; margin-bottom: 20px;"><strong>🚨 Comprehensive Attack Vector Coverage</strong></h5>
-                          <p style="font-size: 1.1em; margin-bottom: 20px;"><strong><a href="https://pavondunbar.github.io/VectorGuard-Labs-Attack-Vector-Suite/" style="color: 
-  #0066ff; text-decoration: none;" target="_blank">→ View Complete 338-Vector Attack Suite Documentation ←</a></strong></p>
-                          <p style="font-size: 1em; color: #000; margin: 0;"><em>Framework derived from thousands of real-world exploits • Continuously updated as new attack patterns and ecosystems emerge</em></p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-
-  <section data-bs-version="5.1" class="content5 cid-trust-assurance" id="trust-assurance" style="background: #fff; color: #000; padding: 80px 0;">
-
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-md-12 col-lg-10">
-
-                  <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-2" style="color: #0066ff; text-align: center;">
-                      <strong>✅ Why You Can Trust VectorGuard Labs Assessments</strong>
-                  </h4>
-
-                  <div class="mbr-text mbr-fonts-style display-7" style="background: rgba(0,255,136,0.1); border: 2px solid #0066ff; padding: 40px; border-radius: 15px;">
-                      <p style="font-size: 1.2em; color: #000; line-height: 1.7;">
-                          Unlike speculative scanners or AI-driven tools that exaggerate risk, VectorGuard Labs operates on a strict
-                          <strong>validated-only reporting model</strong>.
-                      </p>
-
-                      <ul style="color: #000; font-size: 1.05em; line-height: 1.9; margin-top: 20px;">
-                          <li><strong>No fabricated vulnerabilities.</strong> If an exploit is not proven or demonstrable, it does not enter your report.</li>
-                          <li><strong>No severity inflation.</strong> Findings must be economically and technically viable to be considered real.</li>
-                          <li><strong>No theory-only issues.</strong> Missing features or stylistic disagreements are not misrepresented as vulnerabilities.</li>
-                          <li><strong>No “busywork reports.”</strong> If a protocol is sound, we explicitly state:
-                              <em>“No Actionable Risks. Ready for Formal Audit.”</em>
-                          </li>
-                      </ul>
-
-                      <p style="font-size: 1.2em; margin-top: 20px; color: #000;">
-                          This guarantee is enforced through our <strong>Phase-0 grounding logic, proof-first methodology, hypothesis rejection controls,
-                          and evidence-required reporting standards.</strong>
-                      </p>
-
-                      <p style="font-size: 1.2em; margin-top: 20px; color: #000; font-weight: bold;">
-                          VectorGuard Labs delivers truth, not theatrics so you can walk into a formal audit confident that every finding is real,
-                          defensible, and validated.
-                      </p>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-  </section>
-
-  <section data-bs-version="5.1" class="content5 cid-reports-section" id="reports-section" style="background: #fff; color: #000; padding: 80px 0;">
-
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-md-12 col-lg-11">
-
-                  <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-2" style="color: #000; text-align: center;"><strong>📋 Comprehensive, Exploit-Focused Security Report</strong></h4>
-                  <p style="text-align: center; font-size: 1.2em; margin-bottom: 40px; color: #000;"><strong>Every VectorGuard Labs engagement produces a structured, adversarial report bundle designed to get you ready for Tier-1 audits.</strong></p>
-
-                  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
-
-                      <div style="background: rgba(52, 152, 219, 0.2); padding: 30px; border-radius: 15px; border: 2px solid #0066ff;">
-                          <h5 style="color: #000; margin-bottom: 20px;"><strong>🎯 Core Deliverables</strong></h5>
-                          <ul style="color: #000; line-height: 1.8; font-size: 0.95em;">
-                              <li><strong>Executive Summary</strong>: High-level risk narrative for founders, investors, and stakeholders.</li>
-                              <li><strong>Technical Findings Report</strong>: Detailed vulnerability writeups with severity ratings, impact, and exploit reasoning.</li>
-                              <li><strong>Attack Scenarios & Threat Chains</strong>: Multi-step exploit stories that mirror how real attackers would approach your protocol.</li>
-                              <li><strong>Exploit Artifacts (When Applicable)</strong>: Scripts, TX hashes/execution identifiers, state diffs, and invariant violations demonstrating successful attack paths.</li>
-                              <li><strong>Remediation & Hardening Guidance</strong>: Concrete fixes and defensive design recommendations, prioritized by risk.</li>
-                              <li><strong>VectorGuard Coverage Overview</strong>: Summary of which attack categories and phases were exercised against your protocol.</li>
-                          </ul>
-                      </div>
-
-                      <div style="background: rgba(46, 204, 113, 0.2); padding: 30px; border-radius: 15px; border: 2px solid #0066ff;">
-                          <h5 style="color: #000; margin-bottom: 20px;"><strong>🌐 Additional Analysis (When Applicable)</strong></h5>
-                          <ul style="color: #000; line-height: 1.8; font-size: 0.95em;">
-                              <li><strong>Frontend Security Assessment</strong>: Web UI and client-side risks that affect contract interactions.</li>
-                              <li><strong>Economic & Tokenomics Review</strong>: Incentive alignment, flash loan/economic attack viability, and long-term game theory.</li>
-                              <li><strong>Integration & Dependency Risk</strong>: External protocol, oracle, AA, hook, and bridge dependency analysis.</li>
-                              <li><strong>Governance & Control Structure Analysis</strong>: Admin, multisig, DAO, and upgrade mechanics scrutiny.</li>
-                              <li><strong>Cross-Chain Security Review</strong>: Bridge flows, message passing, and desynchronization/duplication risk.</li>
-                          </ul>
-                      </div>
-                  </div>
-
-                  <div style="text-align: center; margin-top: 40px; padding: 40px; background: rgba(241, 196, 15, 0.2); border-radius: 15px; border: 2px solid #ff3333;">
-                      <h5 style="color: #000; margin-bottom: 20px;"><strong>🚀 Our Commitment To You</strong></h5>
-                      <p style="font-size: 1.1em; line-height: 1.7; color: #000; margin: 0;"><em>"We don’t ship vague opinions. We deliver adversarial, evidence-backed analysis using the VectorGuard 15-Phase Framework and 338-vector library, so you can walk into a formal audit with a hardened codebase, real exploit coverage, and a clear remediation plan."</em></p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-
-  <section data-bs-version="5.1" class="content5" style="padding: 40px 0; background: #fff;">
-      <div class="container"></div>
-  </section>
-
-  <section data-bs-version="5.1" class="content8 cid-uOHygKPEOd" id="content8-8" style="background: #fff; color: #000; padding: 80px 0;">
-
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="counter-container col-md-12 col-lg-10">
-
-                  <div class="mbr-text mbr-fonts-style display-7" style="color: #000;">
-                      <ul>
-                          <li><strong>OUR MISSION: To bring adversarial-grade security to Web3 before attackers do. </strong><br>We focus on <strong>pre-audit, exploit-driven assessments</strong> that find and validate the types of issues that actually get exploited in production.</li>
-                          <li><strong>OUR APPROACH: </strong>We combine structured, 15-phase methodology with the VectorGuard 338-vector attack library, fork-based exploit validation (where supported), and invariant/economic modeling to <strong>stress your protocol like a real attacker would.</strong></li>
-                          <li><strong>PRE-AUDIT FOCUS: </strong>Our role is to <strong>prepare you for formal audits</strong>, not replace them, by helping you fix the highest-risk attack paths early, reduce back-and-forth with audit firms, and show users that you take security seriously.</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-
-  <section data-bs-version="5.1" class="content5 cid-phases-section" id="phases-section" style="background: #fff; color: #000; padding: 80px 0;">
-
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-md-12 col-lg-11">
-
-                  <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-2" style="color: #000; text-align: center;"><strong>🚀 Our Security Assessment Process</strong></h4>
-                  <p style="text-align: center; font-size: 1.2em; margin-bottom: 50px; color: #000;"><strong>A structured, three-stage view of how we apply the 15-phase VectorGuard framework to your protocol.</strong></p>
-
-                  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px;">
-
-                      <div style="background: rgba(0,0,0,0.1); padding: 40px; border-radius: 20px; border: 3px solid #ff0000; position: relative;">
-                          <div style="position: absolute; top: -15px; left: 30px; background: #ff0000; color: #fff; padding: 10px 20px; border-radius: 25px; font-weight: 
-  bold;">PHASE 1</div>
-                          <h5 style="color: #000; margin: 30px 0 20px 0; font-size: 1.4em;"><strong>🔍 Recon, Threat Modeling & Invariants</strong></h5>
-                          <div style="background: rgba(231,76,60,0.2); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
-                              <p style="color: #000; font-weight: bold; margin: 0;">⏱️ Duration: 1-3 days</p>
-                          </div>
-                          <ul style="color: #000; line-height: 1.8; font-size: 0.95em; padding-left: 20px;">
-                              <li><strong>Code & Architecture Review:</strong> Understand protocol intent, value flows, and upgradeability patterns.</li>
-                              <li><strong>Threat Modeling:</strong> Identify attacker types (MEV, flash loan, governance, integrators) and challenge trust assumptions.</li>
-                              <li><strong>Attack Surface Mapping:</strong> Enumerate critical functions, roles, and external dependencies.</li>
-                              <li><strong>Invariant Definition:</strong> Establish solvency, accounting, access control, and cross-chain invariants to stress later phases.</li>
-                          </ul>
-                      </div>
-
-                      <div style="background: rgba(0,0,0,0.1); padding: 40px; border-radius: 20px; border: 3px solid #ff3333; position: relative;">
-                          <div style="position: absolute; top: -15px; left: 30px; background: #ff3333; color: #fff; padding: 10px 20px; border-radius: 25px; font-weight: 
-  bold;">PHASE 2</div>
-                          <h5 style="color: #000; margin: 30px 0 20px 0; font-size: 1.4em;"><strong>🎯 Deep Exploit & Scenario Development</strong></h5>
-                          <div style="background: rgba(243,156,18,0.2); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
-                              <p style="color: #000; font-weight: bold; margin: 0;">⏱️ Duration: 3-7 days</p>
-                          </div>
-                          <ul style="color: #000; line-height: 1.8; font-size: 0.95em; padding-left: 20px;">
-                              <li><strong>VectorGuard Testing:</strong> Apply relevant subsets of the 338 attack vectors to your specific design.</li>
-                              <li><strong>Fuzzing & Simulation:</strong> Use stateless/stateful fuzzing and scenario tests to probe multi-step attack paths.</li>
-                              <li><strong>Economic & Incentive Analysis:</strong> Evaluate profitability and feasibility of attacks, including flash loans and governance capture.</li>
-                              <li><strong>Exploit Development:</strong> Where vulnerabilities are found, build chain-appropriate PoCs (fork-based when possible) to validate impact.</li>
-                          </ul>
-                      </div>
-
-                      <div style="background: rgba(0,0,0,0.1); padding: 40px; border-radius: 20px; border: 3px solid #ff0000; position: relative;">
-                          <div style="position: absolute; top: -15px; left: 30px; background: #ff0000; color: #fff; padding: 10px 20px; border-radius: 25px; font-weight: 
-  bold;">PHASE 3</div>
-                          <h5 style="color: #000; margin: 30px 0 20px 0; font-size: 1.4em;"><strong>🔗 Evidence, Reporting & Pre-Audit Hardening</strong></h5>
-                          <div style="background: rgba(46,204,113,0.2); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
-                              <p style="color: #000; font-weight: bold; margin: 0;">⏱️ Duration: 2-3 days</p>
-                          </div>
-                          <ul style="color: #000; line-height: 1.8; font-size: 0.95em; padding-left: 20px;">
-                              <li><strong>Finding Documentation:</strong> Produce structured, exploit-informed findings organized by severity and attack chain.</li>
-                              <li><strong>Severity & Risk Assessment:</strong> Map each issue to business impact, exploitability, and economic consequence.</li>
-                              <li><strong>Remediation & Retest Plan:</strong> Provide prioritized fixes and guidance, plus a clear path for retesting.</li>
-                              <li><strong>Formal Audit Preparation:</strong> Deliver a pre-audit package your team can share with formal auditors to accelerate their review.</li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-
-  <section data-bs-version="5.1" class="content5" style="padding: 40px 0; background: #fff;">
-      <div class="container"></div>
-  </section>
-
-  <section data-bs-version="5.1" class="features21 cid-uSF1cdIO0M" id="features21-j" style="background: #fff; color: #000; padding: 80px 0;">
-
-
-
-
-
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-md-12 col-lg-9">
-                  <div class="card-wrapper mb-4">
-                      <div class="card-box align-center">
-                          <h4 class="card-title mbr-fonts-style mb-4 display-2" style="color: #000;">
-                              <strong>The Process</strong></h4>
-
-
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-md-8">
-                  <div class="item mbr-flex">
-                      <div class="icon-wrap w-100">
-                          <div class="icon-box">
-                              <span class="step-number mbr-fonts-style display-5" style="color: #000;">1</span>
-                          </div>
-                      </div>
-                      <div class="text-box">
-                          <h4 class="icon-title card-title mbr-fonts-style display-7" style="color: #000;">
-                              <strong>Reach out to VectorGuard Labs</strong></h4>
-                          <h5 class="icon-text mbr-fonts-style display-4" style="color: #000;"><strong>Use the simple Get In Touch! Form below</strong> to reach out to us. In the
-  <strong>Message</strong> box, specify your Github repo link so we can assess the scope, protocol type, and risk profile. Or you can provide details via email at <strong>vectorguardlabs@gmail.com</strong></h5>
-                      </div>
-                  </div>
-                  <div class="item mbr-flex">
-                      <div class="icon-wrap w-100">
-                          <div class="icon-box">
-                              <span class="step-number mbr-fonts-style display-5" style="color: #000;">2</span>
-                          </div>
-                      </div>
-                      <div class="text-box">
-                          <h4 class="icon-title card-title mbr-fonts-style display-7" style="color: #000;">
-                              <strong>Receive Your Quote</strong></h4>
-                          <h5 class="icon-text mbr-fonts-style display-4" style="color: #000;"><strong>Within 24-48 hours,</strong> you'll receive a detailed quote and timeline
-  based on your protocol's complexity, codebase size, attack surface, and chain ecosystem.</h5>
-                      </div>
-                  </div>
-                  <div class="item mbr-flex">
-                      <div class="icon-wrap w-100">
-                          <div class="icon-box">
-                              <span class="step-number mbr-fonts-style display-5" style="color: #000;">3</span>
-                          </div>
-                      </div>
-                      <div class="text-box">
-                          <h4 class="icon-title card-title mbr-fonts-style display-7" style="color: #000;">
-                              <strong>Sign Agreements</strong></h4>
-                          <h5 class="icon-text mbr-fonts-style display-4" style="color: #000;">Review and sign our service agreement and NDA to protect your intellectual
-  property.<strong><br><br></strong></h5>
-                      </div>
-                  </div>
-                  <div class="item mbr-flex">
-                      <div class="icon-wrap w-100">
-                          <div class="icon-box">
-                              <span class="step-number mbr-fonts-style display-5" style="color: #000;">4</span>
-                          </div>
-                      </div>
-                      <div class="text-box">
-                          <h4 class="icon-title card-title mbr-fonts-style display-7" style="color: #000;">
-                              <strong>Make Payment</strong></h4>
-                          <h5 class="icon-text mbr-fonts-style display-4" style="color: #000;">VectorGuard Labs accepts payment in <strong>USDC on the BASE
-  blockchain</strong>. Our wallet address is <strong>0x993490281e8c9f90432a3D7dB677BeA27149f5F4. </strong>After making payment, send us the transaction hash for verification,
-  please.</h5>
-                      </div>
-                  </div>
-                  <div class="item mbr-flex">
-                      <div class="icon-wrap w-100">
-                          <div class="icon-box">
-                              <span class="step-number mbr-fonts-style display-5" style="color: #000;">5</span>
-                          </div>
-                      </div>
-                      <div class="text-box">
-                          <h4 class="icon-title card-title mbr-fonts-style display-7" style="color: #000;"><strong>Assessment Begins</strong></h4>
-                          <h5 class="icon-text mbr-fonts-style display-4" style="color: #000;">VectorGuard Labs begins a comprehensive adversarial assessment using the VectorGuard 15-phase framework and 338-vector library tailored to your protocol and chain.</h5>
-                      </div>
-                  </div>
-                  <div class="item mbr-flex">
-                      <div class="icon-wrap w-100">
-                          <div class="icon-box">
-                              <span class="step-number mbr-fonts-style display-5" style="color: #000;">6</span>
-                          </div>
-                      </div>
-                      <div class="text-box">
-                          <h4 class="icon-title card-title mbr-fonts-style display-7" style="color: #000;">
-                              <strong>Receive Results</strong></h4>
-                          <h5 class="icon-text mbr-fonts-style display-4" style="color: #000;"><strong>Within the agreed timeframe,</strong> you'll receive a comprehensive report bundle covering findings, exploit narratives, (where possible) PoC artifacts, and prioritized remediation guidance.</h5>
-                      </div>
-                  </div>
-                  <div class="item mbr-flex">
-                      <div class="icon-wrap w-100">
-                          <div class="icon-box">
-                              <span class="step-number mbr-fonts-style display-5" style="color: #000;">7</span>
-                          </div>
-                      </div>
-                      <div class="text-box">
-                          <h4 class="icon-title card-title mbr-fonts-style display-7" style="color: #000;">
-                              <strong>Mitigate Vulnerabilities</strong></h4>
-                          <h5 class="icon-text mbr-fonts-style display-4" style="color: #000;">Work with your team to implement the recommended fixes and security
-  improvements. Use our findings, invariants, and exploit scripts as a hardening checklist.</h5>
-                      </div>
-                  </div>
-                  <div class="item mbr-flex">
-                      <div class="icon-wrap w-100">
-                          <div class="icon-box">
-                              <span class="step-number mbr-fonts-style display-5" style="color: #000;">8</span>
-                          </div>
-                      </div>
-                      <div class="text-box">
-                          <h4 class="icon-title card-title mbr-fonts-style display-7" style="color: #000;">
-                              <strong>Retesting</strong></h4>
-                          <h5 class="icon-text mbr-fonts-style display-4" style="color: #000;">Submit your fixed codebase for <strong>one complimentary retest (additional retests
-  are 5000 USDC each)</strong> so we can verify remediation effectiveness and check for regressions.</h5>
-                      </div>
-                  </div>
-                  <div class="item mbr-flex last">
-                      <div class="icon-wrap w-100">
-                          <div class="icon-box">
-                              <span class="step-number mbr-fonts-style display-5" style="color: #000;">9</span>
-                          </div>
-                      </div>
-                      <div class="text-box">
-                          <h4 class="icon-title card-title mbr-fonts-style display-7" style="color: #000;">
-                              <strong>Formal Audit Ready</strong></h4>
-                          <h5 class="icon-text mbr-fonts-style display-4" style="color: #000;"><strong>With vulnerabilities addressed and exploit paths analyzed,</strong> your protocol is now positioned for a successful formal audit with higher confidence and fewer surprises.</h5>
-                      </div>
-                  </div>
-
-              </div>
-          </div>
-      </div>
-  </section>
-
-  <section data-bs-version="5.1" class="features10 cid-uSF88b4XxT" id="features10-l" style="background: #fff; color: #000; padding: 80px 0;">
-      <!---->
-
-
-
-
-      <div class="container">
-          <div class="mbr-section-head">
-              <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2" style="color: #000;">
-                  <strong>PRICING</strong><br><strong> (USDC)</strong></h3>
-
-          </div>
-          <div class="row mt-4">
-             <div class="item features-without-image col-12">
-                  <div class="item-wrapper" style="border: 2px solid #ff0000; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
-                      <div class="top-line row">
-                          <div class="col">
-                              <h4 class="card-title mbr-fonts-style display-5" style="color: #000;"><strong>Quick Pass Assessment&nbsp;</strong></h4>
-                          </div>
-                          <div class="col-auto">
-                              <p class="price mbr-fonts-style display-5" style="color: #000;"><strong>10000</strong>&nbsp;</p>
-                          </div>
-                      </div>
-                      <div class="bottom-line">
-                          <p class="mbr-text mbr-fonts-style display-7" style="color: #000;">
-                              <strong>Focused exploitability review for protocols up to 2,000 LoC.</strong><br><br>Ideal for: Simple protocols, proof-of-concept validation, pre-fundraise security check.<br><br>This flat-rate Quick Pass delivers a disciplined, EVM-validated exploitability review across your entire protocol, designed to identify only <strong>materially exploitable vulnerabilities before you commit to a full audit.</strong><br><br>Please send us the transaction hash after payment for verification.</p>
-                      </div>
-                  </div>
-             </div> 
-             <div class="item features-without-image col-12">
-                  <div class="item-wrapper" style="border: 2px solid #ff0000; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
-                      <div class="top-line row">
-                          <div class="col">
-                              <h4 class="card-title mbr-fonts-style display-5" style="color: #000;"><strong>15-Phase Extensive Assessment&nbsp;</strong></h4>
-                          </div>
-                          <div class="col-auto">
-                              <p class="price mbr-fonts-style display-5" style="color: #000;"><strong>50000</strong>&nbsp;</p>
-                          </div>
-                      </div>
-                      <div class="bottom-line">
-                          <p class="mbr-text mbr-fonts-style display-7" style="color: #000;">
-                              <strong>Focused exploitability review for protocols up to 4,000 LoC</strong>.<br><br>This premium engagement delivers a full-spectrum, adversarial security assessment using the complete VectorGuard Labs 15-Phase Framework. Your entire protocol is systematically analyzed across architecture, execution logic, economic design, and runtime behavior to identify deep, high-impact vulnerabilities that The Quick Pass or simpler assessments may not uncover. The assessment is scope-independent (whether your protocol consists of one contract or a complex multi-contract system) and is designed to harden your codebase for production deployment and Tier-1 audit readiness.<br><br>Please send us the transaction hash after payment for verification.</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="item features-without-image col-12">
-                  <div class="item-wrapper" style="border: 2px solid #ff0000; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
-                      <div class="top-line row">
-                          <div class="col">
-                              <h4 class="card-title mbr-fonts-style display-5" style="color: #000;"><strong>Codebases Over 4,000 Lines of Code</strong></h4>
-                          </div>
-                          <div class="col-auto">
-                              <p class="price mbr-fonts-style display-5" style="color: #000;"><strong>Contact Us</strong></p>
-                          </div>
-                      </div>
-                      <div class="bottom-line">
-                          <p class="mbr-text mbr-fonts-style display-7" style="color: #000;"><strong>If your codebase is more than 4,000 LoC (Lines of Code), please reach out to us for custom pricing.</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="item features-without-image col-12">
-                  <div class="item-wrapper" style="border: 2px solid #ff0000; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
-                      <div class="top-line row">
-                          <div class="col">
-                              <h4 class="card-title mbr-fonts-style display-5" style="color: #000;"><strong>Post-Fix Reassessment</strong></h4>
-                          </div>
-                          <div class="col-auto">
-                              <p class="price mbr-fonts-style display-5" style="color: #000;"><strong>5000</strong></p>
-                          </div>
-                      </div>
-                      <div class="bottom-line">
-                          <p class="mbr-text mbr-fonts-style display-7" style="color: #000;"><strong>First Reassessment is FREE!!&nbsp;</strong>&nbsp;<br>This includes verification that fixes are effective, checks for regressions, and confirmation that previously exploited paths are no longer viable.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-
-  <section data-bs-version="5.1" class="content17 cid-uOHwiS9zJE" id="content17-7" style="background: #fff; padding: 80px 0;">
-
-
-
-
-
-
-      <div class="container">
-
-              <div class="row justify-content-center">
-                  <div class="col-12 col-md-10">
-                      <div class="section-head align-center mb-4">
-                          <h3 class="mbr-section-title mb-0 mbr-fonts-style display-2" style="color: #000;"><strong>FAQ</strong>
-                          </h3>
-
-                      </div>
-
-                      <div id="bootstrap-toggle" class="toggle-panel accordionStyles tab-content">
-                          <div class="card mb-3">
-                              <div class="card-header" role="tab" id="headingOne">
-                                  <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_8" 
-  aria-expanded="false" aria-controls="collapse1">
-                                      <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7" style="color: #000;"><strong>How is this different from a formal
-  audit?</strong></h6>
-                                      <span class="sign mbr-iconfont mbri-arrow-down"></span>
-                                  </a>
-                              </div>
-                              <div id="collapse1_8" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne">
-                                  <div class="panel-body">
-                                      <p class="mbr-fonts-style panel-text display-7" style="color: #000;">VectorGuard Labs provides an <strong>adversarial pre-audit assessment</strong>. We behave like attackers: we threat model, define invariants, fuzz, simulate, and (where possible) build exploit PoCs on forks. Formal audits are typically <strong>compliance and assurance artifacts</strong> that happen after you’ve hardened your code. Our job is to <strong>prepare you</strong> so audit firms find fewer issues and you have stronger evidence of security.</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="card mb-3">
-                              <div class="card-header" role="tab" id="headingTwo">
-                                  <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_8" 
-  aria-expanded="false" aria-controls="collapse2">
-                                      <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7" style="color: #000;"><strong>What exactly do I get for my investment?</strong></h6>
-                                      <span class="sign mbr-iconfont mbri-arrow-down"></span>
-                                  </a>
-
-                              </div>
-                              <div id="collapse2_8" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                  <div class="panel-body">
-                                      <p class="mbr-fonts-style panel-text display-7">You'll receive a professional, adversarial security assessment focused on identifying real, exploitable risks in your protocol. Depending on the engagement scope, this includes structured attack-surface analysis, systematic testing using VectorGuard Labs’ methodology, clear findings with severity and impact explanations, and concrete remediation guidance. Where exploitation is realistically demonstrable, findings are supported with technical evidence to validate risk, helping your team remediate issues confidently and prepare for a formal audit without surprises.</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="card mb-3">
-                              <div class="card-header" role="tab" id="headingThree">
-                                  <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_8" 
-  aria-expanded="false" aria-controls="collapse3">
-                                      <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Do you work with all blockchain platforms or just Ethereum-based
-  blockchains (EVM)?</strong></h6>
-                                      <span class="sign mbr-iconfont mbri-arrow-down"></span>
-                                  </a>
-                              </div>
-                              <div id="collapse3_8" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree">
-                                  <div class="panel-body">
-                                      <p class="mbr-fonts-style panel-text display-7">VectorGuard Labs does preliminary security assessments on Solidity, Vyper, Rust, Cairo, and Move smart contracts across EVM chains and other ecosystems. The 15-phase framework adapts to each stack using the strongest available validation method on that chain (forks, localnets, test-validators, or execution traces).</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="card mb-3">
-                              <div class="card-header" role="tab" id="headingThree">
-                                  <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse4_8" 
-  aria-expanded="false" aria-controls="collapse4">
-                                      <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>What information does VectorGuard Labs need to get started?</strong></h6>
-                                      <span class="sign mbr-iconfont mbri-arrow-down"></span>
-                                  </a>
-                              </div>
-                              <div id="collapse4_8" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree">
-                                  <div class="panel-body">
-                                      <p class="mbr-fonts-style panel-text display-7">We need your smart contract source code. That's it. No test files, no documentation, etc. We can work with private GitHub repos or secure file transfers. Like attackers, we won't read your documentation, tokenomics, or whitepapers.</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="card mb-3">
-                              <div class="card-header" role="tab" id="headingThree">
-                                  <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse5_8" 
-  aria-expanded="false" aria-controls="collapse5">
-                                     <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>How do I know my code and intellectual property will be
-  protected?</strong></h6>
-                                          <span class="mbr-iconfont mobi-mbri-arrow-down mobi-mbri"></span>
-                                  </a>
-                              </div>
-                              <div id="collapse5_8" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree">
-                                  <div class="panel-body">
-                                      <p class="mbr-fonts-style panel-text display-7">
-                                         We sign comprehensive NDAs before accessing any code and maintain strict confidentiality protocols. Your code is stored in encrypted,
-  access-controlled environments and is deleted after engagement completion. Our role is to help you harden and protect your codebase, not to reuse or disclose your intellectual property.</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="card mb-3">
-                              <div class="card-header" role="tab" id="headingThree">
-                                  <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse6_8" 
-  aria-expanded="false" aria-controls="collapse6">
-                                      <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>How long does a typical pre-audit security review take?</strong></h6>
-                                      <span class="mbr-iconfont mobi-mbri-arrow-down mobi-mbri"></span>
-                                  </a>
-                              </div>
-                              <div id="collapse6_8" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree">
-                                  <div class="panel-body">
-                                      <p class="mbr-fonts-style panel-text display-7">
-                                         The Quick Pass Assessments are normally completed within 1-2 weeks depending on protocol complexity, with detailed reports highlighting vulnerabilities, attack scenarios, and recommended fixes. The 15-Phase Extensive Assessment normally take 4-6 weeks. Larger or highly complex systems may require additional time for deeper simulation and exploit development.</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-  </section>
-
-  <section data-bs-version="5.1" class="content16 cid-uOHD9SosQG" id="content16-9" style="background: #fff; padding: 80px 0;">
-
-
-
-
-
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-12 col-md-10">
-
-                  <div id="bootstrap-accordion_9" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
-                      <div class="card mb-3">
-                          <div class="card-header" role="tab" id="headingOne">
-                              <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_9" aria-expanded="false"
-   aria-controls="collapse1">
-                                  <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Will my protocol go through all 338 attack vectors?</strong></h6>
-                                  <span class="sign mbr-iconfont mbri-arrow-down"></span>
-                              </a>
-                          </div>
-                          <div id="collapse1_9" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" 
-  data-bs-parent="#bootstrap-accordion_9">
-                              <div class="panel-body">
-                                  <p class="mbr-fonts-style panel-text display-4"><strong>No.</strong> The VectorGuard attack vectors represent a comprehensive threat model, not a checklist applied blindly. Your protocol is first analyzed to determine which vectors are actually relevant to its architecture, assets, and integrations. We then apply the applicable vectors rigorously and go deep on the areas that present the highest real-world exploit risk, rather than performing superficial checks where no realistic attack surface exists.</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="card mb-3">
-                          <div class="card-header" role="tab" id="headingOne">
-                              <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_9" aria-expanded="false"
-   aria-controls="collapse2">
-                                  <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Do you provide a guarantee or warranty on your findings?</strong></h6>
-                                  <span class="sign mbr-iconfont mbri-arrow-down"></span>
-                              </a>
-                          </div>
-                          <div id="collapse2_9" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" 
-  data-bs-parent="#bootstrap-accordion_9">
-                              <div class="panel-body">
-                                  <p class="mbr-fonts-style panel-text display-4">
-                                      No security assessment can guarantee that <strong>all</strong> vulnerabilities are eliminated. What we provide is <strong>structured, adversarial, evidence-backed testing</strong> using the VectorGuard framework. Our goal is to dramatically reduce your risk, uncover realistic attack paths, and prepare you for formal audits—not to promise absolute immunity from future bugs or exploits.</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="card mb-3">
-                          <div class="card-header" role="tab" id="headingOne">
-                              <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_9" aria-expanded="false"
-   aria-controls="collapse3">
-                                  <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>If my test comes back positive, can I deploy my contract to
-  mainnet?</strong></h6>
-                                  <span class="sign mbr-iconfont mbri-arrow-down"></span>
-                              </a>
-                          </div>
-                          <div id="collapse3_9" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" 
-  data-bs-parent="#bootstrap-accordion_9">
-                              <div class="panel-body">
-                                  <p class="mbr-fonts-style panel-text display-4"><strong>
-                                      No,</strong> <strong>VectorGuard Labs strongly recommend proceeding to a formal third-party audit before mainnet deployment.</strong> Our
-  pre-audit assessment is designed to prepare you for a successful formal audit by identifying and fixing vulnerabilities early. The formal audit provides the final compliance
-  certification needed for mainnet launch, and you should treat our work as a <strong>high-value, adversarial pre-stage</strong> not a replacement.</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="card mb-3">
-                          <div class="card-header" role="tab" id="headingOne">
-                              <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse4_9" aria-expanded="false"
-   aria-controls="collapse4">
-                                  <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>How do I know which VectorGuard service is right for my protocol?</strong></h6>
-                                  <span class="sign mbr-iconfont mbri-arrow-down"></span>
-                              </a>
-                          </div>
-                          <div id="collapse4_9" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" 
-  data-bs-parent="#bootstrap-accordion_9">
-                              <div class="panel-body">
-                                  <p class="mbr-fonts-style panel-text display-4">
-                                      The <strong>Quick Pass Assessment</strong> is ideal if you want a fast, adversarial check to uncover real, high-risk vulnerabilities before launch, fundraising, or committing to a full audit. It’s a focused, time-boxed engagement designed to surface only issues that matter.
-
-The <strong>15-Phase Extensive Assessment</strong> is designed for teams preparing for production deployment, significant TVL, or a Tier-1 audit. It delivers a comprehensive, exploit-driven security assessment across architecture, execution logic, and economic design to harden your protocol against sophisticated attacks.
-
-<strong>If you’re unsure, many teams start with the Quick Pass and upgrade once deeper analysis is warranted.</strong></p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="card mb-3">
-                          <div class="card-header" role="tab" id="headingOne">
-                              <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse5_9" aria-expanded="false"
-   aria-controls="collapse5">
-                                  <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>I'm ready to get started!! What payment forms do you accept?</strong></h6>
-                                  <span class="sign mbr-iconfont mbri-arrow-down"></span>
-                              </a>
-                          </div>
-                          <div id="collapse5_9" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" 
-  data-bs-parent="#bootstrap-accordion_9">
-                              <div class="panel-body">
-                                  <p class="mbr-fonts-style panel-text display-4">VectorGuard Labs is crypto-native and accepts <strong>USDC on the BASE</strong>
-  blockchain (RECOMMENDED)—no traditional banking delays or conversion fees. <br><br>Our payment address is
-  <strong>0x993490281e8c9f90432a3D7dB677BeA27149f5F4.<br></strong><br>Please send us the <strong>transaction hash</strong> after payment for verification.<br><br></p>
-                              </div>
-                          </div>
-                      </div>
-
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-
-  <section data-bs-version="5.1" class="form5 cid-sFzDs3t9EG" id="form5-1m">
-
-
-      <div class="container">
-          <div class="mbr-section-head">
-              <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Get in Touch!</strong></h3>
-              <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-7">Ready to start? Have questions? Tell us what's on your mind!</h4>
-          </div>
-          <div class="row justify-content-center mt-4">
-              <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
-                  <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" 
-  data-form-email="true" value="n3VdcvxBy6+IZi7Zvj3teK+A29F4vEN0jLeBkDR2YxcIrjVSyUVQ7n8Ya8wLKc9nfJtjY6K+F5GBpVaQLIfYJGyOih32s+4Vn6GV4Wbx1B/mJfC8pvBdCDLMgXotlcsR.KWSjZRB5yVucKPV/VrL
-  NDaFfdYJClchJCe7PyUSiCBHCv/bdxDoyv5XJxG0JM+D2r3oycb3dA8c6dfIAnc1rcLMx8wttnIAbimB/GxY++rTA8gHqaN7ygda8w74b7afW">
-                      <div class="row">
-                          <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form! Someone will be in touch with you within 1
-  business day.</div>
-                          <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some
-                              problem!</div>
-                      </div>
-                      <div class="dragArea row">
-                          <div class="col-md col-sm-12 form-group mb-3" data-for="name">
-                              <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-form5-1m">
-                          </div>
-                          <div class="col-md col-sm-12 form-group mb-3" data-for="email">
-                              <input type="email" name="email" placeholder="E-mail" data-form-field="email" class="form-control" value="" id="email-form5-1m">
-                          </div>
-
-                          <div class="col-12 form-group mb-3" data-for="textarea">
-                              <textarea name="textarea" placeholder="Message" data-form-field="textarea" class="form-control" id="textarea-form5-1m"></textarea>
-                          </div>
-                          <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn"><button type="submit" class="btn btn-primary display-4">Send
-  message</button></div>
-                      </div>
-  </form>
-              </div>
-          </div>
-      </div>
-  </section>
-
-
-
-  <section data-bs-version="5.1" class="footer7 cid-uP4WLUjy4r" once="footers" id="footer7-a">
-
-
-
-
-
-      <div class="container">
-          <div class="media-container-row align-center mbr-white">
-              <div class="col-12">
-                  <p class="mbr-text mb-0 mbr-fonts-style display-7">
-                      © Copyright 2025 VectorGuard Labs - All Rights Reserved&nbsp;</p>
-              </div>
-          </div>
-      </div>
-  </section>
-
-
-  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>
-    <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>
-    <script src="assets/smoothscroll/smooth-scroll.js"></script>
-    <script src="assets/ytplayer/index.js"></script>
-    <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>
-    <script src="assets/theme/js/script.js"></script>
-    <script src="assets/formoid/formoid.min.js"></script>
-
-
-
-  <input name="cookieData" type="hidden" data-cookie-cookiesAlertType='false' data-cookie-customDialogSelector='null' data-cookie-colorText='#424a4d' data-cookie-colorBg='rgb(255, 
-  255, 255)' data-cookie-opacityOverlay='0' data-cookie-bgOpacity='100' data-cookie-textButton='GOT IT' data-cookie-rejectText='REJECT' data-cookie-colorButton='#6592e6' 
-  data-cookie-rejectColor='#ffffff' data-cookie-colorLink='#424a4d' data-cookie-underlineLink='true' data-cookie-text="We use cookies to give you the best experience.">
-     <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon 
-  cm-icon-smallarrow-up"></i></a></div>
-    </body>
-  </html>
+                <h2 class="mbr-fonts-style mb-4 display-2" style="color: #000;"><strong>What Makes Us Different?</strong></h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 30px 0;">
+                    <div style="background: rgba(255,107,107,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #ff0000;">
+                        <h4 style="color: #ff0000; margin-bottom: 15px;"><strong>Adversarial, Evidence-First Mindset</strong></h4>
+                        <p style="color: #000; line-height: 1.6;">We don't just "review code" - we <strong>attempt to break it</strong> using the VectorGuard Labs 15-phase methodology, then back every Critical/High finding with <strong>exploit scripts, execution traces, and attacker balance deltas.</strong></p>
+                    </div>
+
+                    <div style="background: rgba(102,126,234,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #0066ff;">
+                        <h4 style="color: #0066ff; margin-bottom: 15px;"><strong>338 Real-World Attack Vectors</strong></h4>
+                        <p style="color: #000; line-height: 1.6;">Reentrancy, MEV, oracle and bridge manipulation, governance capture, rounding and accounting drift, AA/EIP-4337, hooks, cross-chain desyncs, economic attacks, and more, <strong>modeled from billions of dollars in real exploits.</strong></p>
+                    </div>
+
+                    <div style="background: rgba(255,193,7,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #ff3333;">
+                        <h4 style="color: #ff3333; margin-bottom: 15px;"><strong>Exploit-Backed Findings</strong></h4>
+                        <p style="color: #000; line-height: 1.6;">Every meaningful finding includes <strong>root cause analysis, exploit narrative, reproduction steps, and (when feasible) a fork-based PoC</strong> that shows before/after balances, invariant violation, and protocol state diffs.</p>
+                    </div>
+
+                    <div style="background: rgba(46,204,113,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #00ff88;">
+                        <h4 style="color: #00ff88; margin-bottom: 15px;"><strong>Risk-Based, Time-Disciplined Execution</strong></h4>
+                        <p style="color: #000; line-height: 1.6;">We prioritize attack paths that can actually kill your protocol or users, combining automated tooling, invariant testing, and exploit development into a <strong>tight, goal-driven engagement window.</strong></p>
+                    </div>
+
+                    <div style="background: rgba(156,39,176,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #9c27b0;">
+                        <h4 style="color: #9c27b0; margin-bottom: 15px;"><strong>Pre-Audit, Not Audit</strong></h4>
+                        <p style="color: #000; line-height: 1.6;">We don't compete with firms like Trail of Bits, OpenZeppelin, Certik, or Cyfrin. <strong>We prepare you for them</strong> so formal auditors see a hardened codebase, real exploit coverage, and a protocol that takes security seriously.</p>
+                    </div>
+                </div>
+
+                <hr style="border: 2px solid #0066ff; margin: 40px 0;">
+
+                <h2 class="mbr-fonts-style mb-4 display-2" style="color: #000;"><strong>Our Validation & Exploit Approach</strong></h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 25px; margin: 30px 0;">
+                    <div style="background: rgba(0,0,0,0.1); padding: 25px; border-radius: 12px;">
+                        <h4 style="color: #0066ff; margin-bottom: 15px;"><strong>Semantic & Invariant-Driven Analysis</strong></h4>
+                        <p style="color: #000; line-height: 1.6;">We model what your protocol is supposed to do, then define <strong>hard invariants</strong> around solvency, share accounting, access control, cross-chain state, and economic safety and attempt to violate them.</p>
+                    </div>
+
+                    <div style="background: rgba(0,0,0,0.1); padding: 25px; border-radius: 12px;">
+                        <h4 style="color: #0066ff; margin-bottom: 15px;"><strong>Automated Analysis & Fuzzing</strong></h4>
+                        <p style="color: #000; line-height: 1.6;">Static analysis, mutation tests, symbolic execution, <strong>stateless and stateful fuzzing, property tests, and invariant tests</strong> across high-risk flows to push your contracts into weird, adversarial edge cases.</p>
+                    </div>
+
+                    <div style="background: rgba(0,0,0,0.1); padding: 25px; border-radius: 12px;">
+                        <h4 style="color: #0066ff; margin-bottom: 15px;"><strong>DeFi Attack Surface Coverage</strong></h4>
+                        <p style="color: #000; line-height: 1.6;">Coverage across lending, AMMs, vaults, staking, governance, liquidations, LSTs, AA, hooks, and bridges <strong>mirroring how real attackers chain protocols together</strong> for maximum impact.</p>
+                    </div>
+
+                    <div style="background: rgba(0,0,0,0.1); padding: 25px; border-radius: 12px;">
+                        <h4 style="color: #0066ff; margin-bottom: 15px;"><strong>Fork-Based Attack Simulation</strong></h4>
+                        <p style="color: #000; line-height: 1.6;">Where chains support it, we use <strong>mainnet forks</strong> (or their equivalents) to simulate attacks with real liquidity, oracle feeds, and gas constraints, capturing <strong>TX hashes and execution traces</strong> as proof.</p>
+                    </div>
+
+                    <div style="background: rgba(0,0,0,0.1); padding: 25px; border-radius: 12px;">
+                        <h4 style="color: #0066ff; margin-bottom: 15px;"><strong>Economic & Game-Theoretic Modeling</strong></h4>
+                        <p style="color: #000; line-height: 1.6;">We analyze <strong>profitability and incentives</strong> for rational attackers, flash loan windows, oracle manipulation profit, governance capture ROI, and long-horizon economic attacks.</p>
+                    </div>
+
+                    <div style="background: rgba(0,0,0,0.1); padding: 25px; border-radius: 12px;">
+                        <h4 style="color: #0066ff; margin-bottom: 15px;"><strong>Integration & Cross-Chain Risk</strong></h4>
+                        <p style="color: #000; line-height: 1.6;">We investigate how your protocol can be broken via <strong>integrated protocols, bridges, oracles, AA, and hooks</strong> not just within your own repo.</p>
+                    </div>
+                </div>
+
+                <hr style="border: 2px solid #0066ff; margin: 40px 0;">
+
+                <h2 class="mbr-fonts-style mb-4 display-2" style="color: #000;"><strong>Benefits for Your Protocol</strong></h2>
+
+                <div class="mbr-text mbr-fonts-style display-7" style="background: rgba(0,255,136,0.1); padding: 30px; border-radius: 15px;">
+                    <ul style="color: #000; line-height: 1.8; font-size: 1.1em;">
+                        <li>Identify <strong>Critical and High impact paths</strong> that could realistically drain funds, corrupt state, or kill the protocol.</li>
+                        <li>Enter formal audits with <strong>fewer surprises, cleaner code, and exploit-backed pre-audit coverage</strong> reducing iteration and cost.</li>
+                        <li>Build <strong>real security credibility</strong> with investors, formal auditors, and users by demonstrating adversarial testing, not just "we were audited."</li>
+                        <li>Receive <strong>concrete remediation guidance, exploit scripts, and invariants</strong> your team can harden against and reuse in future testing.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section data-bs-version="5.1" class="content5 cid-uOGHPepRXQ" id="content5-2" style="background: #fff; color: #000; padding: 80px 0;">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-2" style="color: #0066ff;"><strong>The VectorGuard Labs 338-Vector Attack Framework</strong></h4>
+                <div class="mbr-text mbr-fonts-style display-7" style="background: rgba(0,255,136,0.1); padding: 40px; border-radius: 15px; border: 2px solid #0066ff;">
+                    <p style="font-size: 1.3em; margin-bottom: 30px; color: #000;"><strong>Our pre-audit assessments are driven by the VectorGuard Pro 15-Phase Framework and a 338-vector attack library built from real exploits, not theory.</strong></p>
+
+                    <div class="phases-container">
+                        <div style="background: rgba(255,107,107,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #ff0000;">
+                            <h5 style="color: #ff0000; margin-bottom: 15px;"><strong>Phase 1 - 5</strong></h5>
+                            <div class="phase-content">
+                                <div>
+                                    <strong>1.</strong> Manual review, map architecture, identify roles/permissions, and analyze upgradeability patterns to understand how value and authority flow through the system.
+                                </div>
+                                <div>
+                                    <strong>2.</strong> Identify threat actors (MEV, flash loan attackers, malicious integrators) and explicitly document and <strong>challenge all trust assumptions.</strong>
+                                </div>
+                                <div>
+                                    <strong>3.</strong> Formally define measurable security invariants (Financial, Access Control, State Consistency, Cross-Chain, Governance) that must never be violated.
+                                </div>
+                                <div>
+                                    <strong>4.</strong> Run automated tools, perform line-by-line manual review, hunt for known vulnerability classes, and implement invariant-based fuzzing to expose hidden paths to invariant breaks.
+                                </div>
+                                <div>
+                                    <strong>5.</strong> Fork-based (or chain-appropriate) exploit testing for Critical/High findings, generating full exploit scripts and transaction identifiers with attacker balance deltas, state diffs, and rigorous false positive filtering.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="background: rgba(102,126,234,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #0066ff;">
+                            <h5 style="color: #0066ff; margin-bottom: 15px;"><strong>Phase 6 - 10 </strong></h5>
+                            <div class="phase-content">
+                                <div>
+                                    <strong>6.</strong> Model the protocol's intended behavior using functional specifications, state-machine diagrams, and Pre/Post Conditions to expose spec gaps and mismatches with the code.
+                                </div>
+                                <div>
+                                    <strong>7.</strong> Analyze rational attacker incentives, arbitrage paths, flash loan profitability, and multi-step economic attacks to determine which exploits are truly viable and profitable.
+                                </div>
+                                <div>
+                                    <strong>8.</strong> Perform gas profiling, unbounded loop detection, and gas-griefing analysis to identify DoS and griefing vectors that can make your protocol unusable or ungovernable.
+                                </div>
+                                <div>
+                                    <strong>9.</strong> Simulate multi-user interactions, race conditions (front-running/back-running), time-advanced scenarios, and use stateful/stateless fuzzing to recreate complex real-world dynamics.
+                                </div>
+                                <div>
+                                    <strong>10.</strong> Combine two or more vulnerabilities or "low-risk" issues into <strong>full red-team attack chains</strong> that can escalate to Critical impact, including profit and feasibility calculations.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="background: rgba(255,193,7,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #ff3333;">
+                            <h5 style="color: #ff3333; margin-bottom: 15px;"><strong>Phase 11 - 15 </strong></h5>
+                            <div class="phase-content">
+                                <div>
+                                    <strong>11.</strong> Verify fixes, check for regressions, analyze new attack surfaces introduced by changes, and confirm storage layout stability for upgradeable contracts.
+                                </div>
+                                <div>
+                                    <strong>12.</strong> Prove/disprove critical properties using formal techniques (symbolic execution, property-based testing, and assertions) for mathematical-style assurance where appropriate.
+                                </div>
+                                <div>
+                                    <strong>13.</strong> Apply a strict severity classification and reporting standard, documenting each finding with root cause, exploitability, impact, and quantified risk where possible.
+                                </div>
+                                <div>
+                                    <strong>14.</strong> Perform a final coverage and risk review—reassessing severities, cross-checking attack surfaces, and ensuring the assessment maps clearly to your protocol's threat model.
+                                </div>
+                                <div>
+                                    <strong>15.</strong> Generate a detailed, adversarially-informed report bundle and hand off to your team as a <strong>pre-audit hardening package</strong> to prepare for formal third-party audits.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 40px; padding: 30px; background: rgba(0,255,136,0.1); border-radius: 10px;">
+                        <h5 style="color: #0066ff; margin-bottom: 20px;"><strong>Comprehensive Attack Vector Coverage</strong></h5>
+                        <p style="font-size: 1.1em; margin-bottom: 20px;"><strong><a href="https://pavondunbar.github.io/VectorGuard-Labs-Attack-Vector-Suite/" style="color:
+#0066ff; text-decoration: none;" target="_blank">View Complete 338-Vector Attack Suite Documentation</a></strong></p>
+                        <p style="font-size: 1em; color: #000; margin: 0;"><em>Framework derived from thousands of real-world exploits - Continuously updated as new attack patterns and ecosystems emerge</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-trust-assurance" id="trust-assurance" style="background: #fff; color: #000; padding: 80px 0;">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-2" style="color: #0066ff; text-align: center;">
+                    <strong>Why You Can Trust VectorGuard Labs Assessments</strong>
+                </h4>
+
+                <div class="mbr-text mbr-fonts-style display-7" style="background: rgba(0,255,136,0.1); border: 2px solid #0066ff; padding: 40px; border-radius: 15px;">
+                    <p style="font-size: 1.2em; color: #000; line-height: 1.7;">
+                        Unlike speculative scanners or AI-driven tools that exaggerate risk, VectorGuard Labs operates on a strict
+                        <strong>validated-only reporting model</strong>.
+                    </p>
+
+                    <ul style="color: #000; font-size: 1.05em; line-height: 1.9; margin-top: 20px;">
+                        <li><strong>No fabricated vulnerabilities.</strong> If an exploit is not proven or demonstrable, it does not enter your report.</li>
+                        <li><strong>No severity inflation.</strong> Findings must be economically and technically viable to be considered real.</li>
+                        <li><strong>No theory-only issues.</strong> Missing features or stylistic disagreements are not misrepresented as vulnerabilities.</li>
+                        <li><strong>No "busywork reports."</strong> If a protocol is sound, we explicitly state:
+                            <em>"No Actionable Risks. Ready for Formal Audit."</em>
+                        </li>
+                    </ul>
+
+                    <p style="font-size: 1.2em; margin-top: 20px; color: #000;">
+                        This guarantee is enforced through our <strong>Phase-0 grounding logic, proof-first methodology, hypothesis rejection controls,
+                        and evidence-required reporting standards.</strong>
+                    </p>
+
+                    <p style="font-size: 1.2em; margin-top: 20px; color: #000; font-weight: bold;">
+                        VectorGuard Labs delivers truth, not theatrics so you can walk into a formal audit confident that every finding is real,
+                        defensible, and validated.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-reports-section" id="reports-section" style="background: #fff; color: #000; padding: 80px 0;">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-11">
+
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-2" style="color: #000; text-align: center;"><strong>Comprehensive, Exploit-Focused Security Report</strong></h4>
+                <p style="text-align: center; font-size: 1.2em; margin-bottom: 40px; color: #000;"><strong>Every VectorGuard Labs engagement produces a structured, adversarial report bundle designed to get you ready for Tier-1 audits.</strong></p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+
+                    <div style="background: rgba(52, 152, 219, 0.2); padding: 30px; border-radius: 15px; border: 2px solid #0066ff;">
+                        <h5 style="color: #000; margin-bottom: 20px;"><strong>Core Deliverables</strong></h5>
+                        <ul style="color: #000; line-height: 1.8; font-size: 0.95em;">
+                            <li><strong>Executive Summary</strong>: High-level risk narrative for founders, investors, and stakeholders.</li>
+                            <li><strong>Technical Findings Report</strong>: Detailed vulnerability writeups with severity ratings, impact, and exploit reasoning.</li>
+                            <li><strong>Attack Scenarios & Threat Chains</strong>: Multi-step exploit stories that mirror how real attackers would approach your protocol.</li>
+                            <li><strong>Exploit Artifacts (When Applicable)</strong>: Scripts, TX hashes/execution identifiers, state diffs, and invariant violations demonstrating successful attack paths.</li>
+                            <li><strong>Remediation & Hardening Guidance</strong>: Concrete fixes and defensive design recommendations, prioritized by risk.</li>
+                            <li><strong>VectorGuard Coverage Overview</strong>: Summary of which attack categories and phases were exercised against your protocol.</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(46, 204, 113, 0.2); padding: 30px; border-radius: 15px; border: 2px solid #0066ff;">
+                        <h5 style="color: #000; margin-bottom: 20px;"><strong>Additional Analysis (When Applicable)</strong></h5>
+                        <ul style="color: #000; line-height: 1.8; font-size: 0.95em;">
+                            <li><strong>Frontend Security Assessment</strong>: Web UI and client-side risks that affect contract interactions.</li>
+                            <li><strong>Economic & Tokenomics Review</strong>: Incentive alignment, flash loan/economic attack viability, and long-term game theory.</li>
+                            <li><strong>Integration & Dependency Risk</strong>: External protocol, oracle, AA, hook, and bridge dependency analysis.</li>
+                            <li><strong>Governance & Control Structure Analysis</strong>: Admin, multisig, DAO, and upgrade mechanics scrutiny.</li>
+                            <li><strong>Cross-Chain Security Review</strong>: Bridge flows, message passing, and desynchronization/duplication risk.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 40px; padding: 40px; background: rgba(241, 196, 15, 0.2); border-radius: 15px; border: 2px solid #ff3333;">
+                    <h5 style="color: #000; margin-bottom: 20px;"><strong>Our Commitment To You</strong></h5>
+                    <p style="font-size: 1.1em; line-height: 1.7; color: #000; margin: 0;"><em>"We don't ship vague opinions. We deliver adversarial, evidence-backed analysis using the VectorGuard 15-Phase Framework and 338-vector library, so you can walk into a formal audit with a hardened codebase, real exploit coverage, and a clear remediation plan."</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5" style="padding: 40px 0; background: #fff;">
+    <div class="container"></div>
+</section>
+
+<section data-bs-version="5.1" class="content8 cid-uOHygKPEOd" id="content8-8" style="background: #fff; color: #000; padding: 80px 0;">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="counter-container col-md-12 col-lg-10">
+
+                <div class="mbr-text mbr-fonts-style display-7" style="color: #000;">
+                    <ul>
+                        <li><strong>OUR MISSION: To bring adversarial-grade security to Web3 before attackers do. </strong><br>We focus on <strong>pre-audit, exploit-driven assessments</strong> that find and validate the types of issues that actually get exploited in production.</li>
+                        <li><strong>OUR APPROACH: </strong>We combine structured, 15-phase methodology with the VectorGuard 338-vector attack library, fork-based exploit validation (where supported), and invariant/economic modeling to <strong>stress your protocol like a real attacker would.</strong></li>
+                        <li><strong>PRE-AUDIT FOCUS: </strong>Our role is to <strong>prepare you for formal audits</strong>, not replace them, by helping you fix the highest-risk attack paths early, reduce back-and-forth with audit firms, and show users that you take security seriously.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-phases-section" id="phases-section" style="background: #fff; color: #000; padding: 80px 0;">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-11">
+
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-2" style="color: #000; text-align: center;"><strong>Our Security Assessment Process</strong></h4>
+                <p style="text-align: center; font-size: 1.2em; margin-bottom: 50px; color: #000;"><strong>A structured, three-stage view of how we apply the 15-phase VectorGuard framework to your protocol.</strong></p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px;">
+
+                    <div style="background: rgba(0,0,0,0.1); padding: 40px; border-radius: 20px; border: 3px solid #ff0000; position: relative;">
+                        <div style="position: absolute; top: -15px; left: 30px; background: #ff0000; color: #fff; padding: 10px 20px; border-radius: 25px; font-weight:
+bold;">PHASE 1</div>
+                        <h5 style="color: #000; margin: 30px 0 20px 0; font-size: 1.4em;"><strong>Recon, Threat Modeling & Invariants</strong></h5>
+                        <div style="background: rgba(231,76,60,0.2); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                            <p style="color: #000; font-weight: bold; margin: 0;">Duration: 1-3 days</p>
+                        </div>
+                        <ul style="color: #000; line-height: 1.8; font-size: 0.95em; padding-left: 20px;">
+                            <li><strong>Code & Architecture Review:</strong> Understand protocol intent, value flows, and upgradeability patterns.</li>
+                            <li><strong>Threat Modeling:</strong> Identify attacker types (MEV, flash loan, governance, integrators) and challenge trust assumptions.</li>
+                            <li><strong>Attack Surface Mapping:</strong> Enumerate critical functions, roles, and external dependencies.</li>
+                            <li><strong>Invariant Definition:</strong> Establish solvency, accounting, access control, and cross-chain invariants to stress later phases.</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(0,0,0,0.1); padding: 40px; border-radius: 20px; border: 3px solid #ff3333; position: relative;">
+                        <div style="position: absolute; top: -15px; left: 30px; background: #ff3333; color: #fff; padding: 10px 20px; border-radius: 25px; font-weight:
+bold;">PHASE 2</div>
+                        <h5 style="color: #000; margin: 30px 0 20px 0; font-size: 1.4em;"><strong>Deep Exploit & Scenario Development</strong></h5>
+                        <div style="background: rgba(243,156,18,0.2); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                            <p style="color: #000; font-weight: bold; margin: 0;">Duration: 3-7 days</p>
+                        </div>
+                        <ul style="color: #000; line-height: 1.8; font-size: 0.95em; padding-left: 20px;">
+                            <li><strong>VectorGuard Testing:</strong> Apply relevant subsets of the 338 attack vectors to your specific design.</li>
+                            <li><strong>Fuzzing & Simulation:</strong> Use stateless/stateful fuzzing and scenario tests to probe multi-step attack paths.</li>
+                            <li><strong>Economic & Incentive Analysis:</strong> Evaluate profitability and feasibility of attacks, including flash loans and governance capture.</li>
+                            <li><strong>Exploit Development:</strong> Where vulnerabilities are found, build chain-appropriate PoCs (fork-based when possible) to validate impact.</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(0,0,0,0.1); padding: 40px; border-radius: 20px; border: 3px solid #ff0000; position: relative;">
+                        <div style="position: absolute; top: -15px; left: 30px; background: #ff0000; color: #fff; padding: 10px 20px; border-radius: 25px; font-weight:
+bold;">PHASE 3</div>
+                        <h5 style="color: #000; margin: 30px 0 20px 0; font-size: 1.4em;"><strong>Evidence, Reporting & Pre-Audit Hardening</strong></h5>
+                        <div style="background: rgba(46,204,113,0.2); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                            <p style="color: #000; font-weight: bold; margin: 0;">Duration: 2-3 days</p>
+                        </div>
+                        <ul style="color: #000; line-height: 1.8; font-size: 0.95em; padding-left: 20px;">
+                            <li><strong>Finding Documentation:</strong> Produce structured, exploit-informed findings organized by severity and attack chain.</li>
+                            <li><strong>Severity & Risk Assessment:</strong> Map each issue to business impact, exploitability, and economic consequence.</li>
+                            <li><strong>Remediation & Retest Plan:</strong> Provide prioritized fixes and guidance, plus a clear path for retesting.</li>
+                            <li><strong>Formal Audit Preparation:</strong> Deliver a pre-audit package your team can share with formal auditors to accelerate their review.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5" style="padding: 40px 0; background: #fff;">
+    <div class="container"></div>
+</section>
+
+<section data-bs-version="5.1" class="features21 cid-uSF1cdIO0M" id="features21-j" style="background: #fff; color: #000; padding: 80px 0;">
+
+
+
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                <div class="card-wrapper mb-4">
+                    <div class="card-box align-center">
+                        <h4 class="card-title mbr-fonts-style mb-4 display-2" style="color: #000;">
+                            <strong>The Process</strong></h4>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="item mbr-flex">
+                    <div class="icon-wrap w-100">
+                        <div class="icon-box">
+                            <span class="step-number mbr-fonts-style display-5" style="color: #000;">1</span>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <h4 class="icon-title card-title mbr-fonts-style display-7" style="color: #000;">
+                            <strong>Reach out to VectorGuard Labs</strong></h4>
+                        <h5 class="icon-text mbr-fonts-style display-4" style="color: #000;"><strong>Use the simple Get In Touch! Form below</strong> to reach out to us. In the
+<strong>Message</strong> box, specify your Github repo link so we can assess the scope, protocol type, and risk profile. Or you can provide details via email at <strong>vectorguardlabs@gmail.com</strong></h5>
+                    </div>
+                </div>
+                <div class="item mbr-flex">
+                    <div class="icon-wrap w-100">
+                        <div class="icon-box">
+                            <span class="step-number mbr-fonts-style display-5" style="color: #000;">2</span>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <h4 class="icon-title card-title mbr-fonts-style display-7" style="color: #000;">
+                            <strong>Receive Your Quote</strong></h4>
+                        <h5 class="icon-text mbr-fonts-style display-4" style="color: #000;"><strong>Within 24-48 hours,</strong> you'll receive a detailed quote and timeline
+based on your protocol's complexity, codebase size, attack surface, and chain ecosystem.</h5>
+                    </div>
+                </div>
+                <div class="item mbr-flex">
+                    <div class="icon-wrap w-100">
+                        <div class="icon-box">
+                            <span class="step-number mbr-fonts-style display-5" style="color: #000;">3</span>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <h4 class="icon-title card-title mbr-fonts-style display-7" style="color: #000;">
+                            <strong>Sign Agreements</strong></h4>
+                        <h5 class="icon-text mbr-fonts-style display-4" style="color: #000;">Review and sign our service agreement and NDA to protect your intellectual
+property.<strong><br><br></strong></h5>
+                    </div>
+                </div>
+                <div class="item mbr-flex">
+                    <div class="icon-wrap w-100">
+                        <div class="icon-box">
+                            <span class="step-number mbr-fonts-style display-5" style="color: #000;">4</span>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <h4 class="icon-title card-title mbr-fonts-style display-7" style="color: #000;">
+                            <strong>Make Payment</strong></h4>
+                        <h5 class="icon-text mbr-fonts-style display-4" style="color: #000;">VectorGuard Labs accepts payment in <strong>USDC on the BASE
+blockchain</strong>. Our wallet address is <strong>0x993490281e8c9f90432a3D7dB677BeA27149f5F4. </strong>After making payment, send us the transaction hash for verification,
+please.</h5>
+                    </div>
+                </div>
+                <div class="item mbr-flex">
+                    <div class="icon-wrap w-100">
+                        <div class="icon-box">
+                            <span class="step-number mbr-fonts-style display-5" style="color: #000;">5</span>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <h4 class="icon-title card-title mbr-fonts-style display-7" style="color: #000;"><strong>Assessment Begins</strong></h4>
+                        <h5 class="icon-text mbr-fonts-style display-4" style="color: #000;">VectorGuard Labs begins a comprehensive adversarial assessment using the VectorGuard 15-phase framework and 338-vector library tailored to your protocol and chain.</h5>
+                    </div>
+                </div>
+                <div class="item mbr-flex">
+                    <div class="icon-wrap w-100">
+                        <div class="icon-box">
+                            <span class="step-number mbr-fonts-style display-5" style="color: #000;">6</span>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <h4 class="icon-title card-title mbr-fonts-style display-7" style="color: #000;">
+                            <strong>Receive Results</strong></h4>
+                        <h5 class="icon-text mbr-fonts-style display-4" style="color: #000;"><strong>Within the agreed timeframe,</strong> you'll receive a comprehensive report bundle covering findings, exploit narratives, (where possible) PoC artifacts, and prioritized remediation guidance.</h5>
+                    </div>
+                </div>
+                <div class="item mbr-flex">
+                    <div class="icon-wrap w-100">
+                        <div class="icon-box">
+                            <span class="step-number mbr-fonts-style display-5" style="color: #000;">7</span>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <h4 class="icon-title card-title mbr-fonts-style display-7" style="color: #000;">
+                            <strong>Mitigate Vulnerabilities</strong></h4>
+                        <h5 class="icon-text mbr-fonts-style display-4" style="color: #000;">Work with your team to implement the recommended fixes and security
+improvements. Use our findings, invariants, and exploit scripts as a hardening checklist.</h5>
+                    </div>
+                </div>
+                <div class="item mbr-flex">
+                    <div class="icon-wrap w-100">
+                        <div class="icon-box">
+                            <span class="step-number mbr-fonts-style display-5" style="color: #000;">8</span>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <h4 class="icon-title card-title mbr-fonts-style display-7" style="color: #000;">
+                            <strong>Retesting</strong></h4>
+                        <h5 class="icon-text mbr-fonts-style display-4" style="color: #000;">Submit your fixed codebase for <strong>one complimentary retest (additional retests
+are $5,000 USDC each)</strong> so we can verify remediation effectiveness and check for regressions.</h5>
+                    </div>
+                </div>
+                <div class="item mbr-flex last">
+                    <div class="icon-wrap w-100">
+                        <div class="icon-box">
+                            <span class="step-number mbr-fonts-style display-5" style="color: #000;">9</span>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <h4 class="icon-title card-title mbr-fonts-style display-7" style="color: #000;">
+                            <strong>Formal Audit Ready</strong></h4>
+                        <h5 class="icon-text mbr-fonts-style display-4" style="color: #000;"><strong>With vulnerabilities addressed and exploit paths analyzed,</strong> your protocol is now positioned for a successful formal audit with higher confidence and fewer surprises.</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features10 cid-uSF88b4XxT" id="features10-l" style="background: #fff; color: #000; padding: 80px 0;">
+    <!---->
+
+
+
+
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2" style="color: #000;">
+                <strong>PRICING</strong><br><strong>(USDC)</strong></h3>
+            <p style="text-align: center; font-size: 1.1em; margin-top: 20px; color: #666;">Select the tier that best matches your protocol's complexity and scope</p>
+        </div>
+
+        <div class="row mt-5">
+            <!-- Tier 1: Small Protocol -->
+            <div class="col-12 col-lg-6 mb-4">
+                <div class="pricing-tier-card">
+                    <div class="pricing-tier-header">
+                        <div>
+                            <h4 class="pricing-tier-title">Tier 1: Small Protocol</h4>
+                            <p style="color: #666; margin: 5px 0 0 0; font-size: 0.95em;">&lt; 1,000 Lines of Code</p>
+                        </div>
+                        <div class="text-end">
+                            <div class="pricing-tier-price">$8,000 - $15,000</div>
+                            <span class="pricing-tier-hours">~80-120 hours</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-tier-features">
+                        <li>Single-chain deployment</li>
+                        <li>No complex integrations</li>
+                        <li>Full 15-phase framework coverage</li>
+                        <li>Exploit-backed findings report</li>
+                        <li>One complimentary retest included</li>
+                    </ul>
+                    <div class="pricing-tier-examples">
+                        <strong>Ideal for:</strong> Simple vaults, ERC-20 tokens, basic staking contracts, single-purpose protocols
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tier 2: Medium Protocol -->
+            <div class="col-12 col-lg-6 mb-4">
+                <div class="pricing-tier-card">
+                    <div class="pricing-tier-header">
+                        <div>
+                            <h4 class="pricing-tier-title">Tier 2: Medium Protocol</h4>
+                            <p style="color: #666; margin: 5px 0 0 0; font-size: 0.95em;">1,000 - 5,000 Lines of Code</p>
+                        </div>
+                        <div class="text-end">
+                            <div class="pricing-tier-price">$18,000 - $35,000</div>
+                            <span class="pricing-tier-hours">~120-180 hours</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-tier-features">
+                        <li>Multiple contracts with interactions</li>
+                        <li>Oracle integrations supported</li>
+                        <li>Economic attack modeling included</li>
+                        <li>Fork-based exploit validation</li>
+                        <li>One complimentary retest included</li>
+                    </ul>
+                    <div class="pricing-tier-examples">
+                        <strong>Ideal for:</strong> Lending protocols, AMMs, yield aggregators, NFT marketplaces with DeFi mechanics
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tier 3: Complex Protocol -->
+            <div class="col-12 col-lg-6 mb-4">
+                <div class="pricing-tier-card">
+                    <div class="pricing-tier-header">
+                        <div>
+                            <h4 class="pricing-tier-title">Tier 3: Complex Protocol</h4>
+                            <p style="color: #666; margin: 5px 0 0 0; font-size: 0.95em;">5,000+ Lines of Code</p>
+                        </div>
+                        <div class="text-end">
+                            <div class="pricing-tier-price">$40,000 - $75,000</div>
+                            <span class="pricing-tier-hours">~180-300 hours</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-tier-features">
+                        <li>Multi-chain or L2 deployment</li>
+                        <li>Heavy DeFi integrations</li>
+                        <li>Governance + upgradeability analysis</li>
+                        <li>Cross-chain security review</li>
+                        <li>One complimentary retest included</li>
+                    </ul>
+                    <div class="pricing-tier-examples">
+                        <strong>Ideal for:</strong> Full DeFi stacks, cross-chain bridges, complex lending/borrowing systems, DAOs with treasury
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tier 4: Enterprise -->
+            <div class="col-12 col-lg-6 mb-4">
+                <div class="pricing-tier-card" style="border-color: #ff0000; background: rgba(255,0,0,0.05);">
+                    <div class="pricing-tier-header">
+                        <div>
+                            <h4 class="pricing-tier-title" style="color: #ff0000;">Tier 4: Enterprise / Critical Infrastructure</h4>
+                            <p style="color: #666; margin: 5px 0 0 0; font-size: 0.95em;">Custom Scope</p>
+                        </div>
+                        <div class="text-end">
+                            <div class="pricing-tier-price">$80,000 - $150,000+</div>
+                            <span class="pricing-tier-hours" style="background: rgba(255,0,0,0.2);">Custom Timeline</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-tier-features">
+                        <li>Dedicated assessment timeline</li>
+                        <li>Multiple review cycles</li>
+                        <li>Post-remediation verification included</li>
+                        <li>Direct communication channel</li>
+                        <li>Extended support period</li>
+                    </ul>
+                    <div class="pricing-tier-examples">
+                        <strong>Ideal for:</strong> Major DeFi protocols, institutional-grade infrastructure, high-TVL systems, protocols preparing for significant launches
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Services -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div style="background: rgba(0,255,136,0.1); border: 2px solid #0066ff; border-radius: 15px; padding: 30px;">
+                    <h5 style="color: #0066ff; margin-bottom: 20px; text-align: center;"><strong>Additional Services</strong></h5>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                        <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; text-align: center;">
+                            <h6 style="color: #000; margin-bottom: 10px;"><strong>Post-Fix Reassessment</strong></h6>
+                            <p style="color: #ff0000; font-size: 1.5em; font-weight: bold; margin: 0;">$5,000 USDC</p>
+                            <p style="color: #666; font-size: 0.9em; margin-top: 10px;">First reassessment FREE with any tier. Includes fix verification, regression checks, and updated report.</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; text-align: center;">
+                            <h6 style="color: #000; margin-bottom: 10px;"><strong>Payment Method</strong></h6>
+                            <p style="color: #0066ff; font-size: 1.1em; font-weight: bold; margin: 0;">USDC on BASE</p>
+                            <p style="color: #666; font-size: 0.9em; margin-top: 10px;">Wallet: 0x993490281e8c9f90432a3D7dB677BeA27149f5F4<br>Send TX hash after payment for verification.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content17 cid-uOHwiS9zJE" id="content17-7" style="background: #fff; padding: 80px 0;">
+
+
+
+
+
+
+    <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div class="section-head align-center mb-4">
+                        <h3 class="mbr-section-title mb-0 mbr-fonts-style display-2" style="color: #000;"><strong>FAQ</strong>
+                        </h3>
+
+                    </div>
+
+                    <div id="bootstrap-toggle" class="toggle-panel accordionStyles tab-content">
+                        <div class="card mb-3">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_8"
+aria-expanded="false" aria-controls="collapse1">
+                                    <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7" style="color: #000;"><strong>How is this different from a formal
+audit?</strong></h6>
+                                    <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse1_8" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7" style="color: #000;">VectorGuard Labs provides an <strong>adversarial pre-audit assessment</strong>. We behave like attackers: we threat model, define invariants, fuzz, simulate, and (where possible) build exploit PoCs on forks. Formal audits are typically <strong>compliance and assurance artifacts</strong> that happen after you've hardened your code. Our job is to <strong>prepare you</strong> so audit firms find fewer issues and you have stronger evidence of security.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-header" role="tab" id="headingTwo">
+                                <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_8"
+aria-expanded="false" aria-controls="collapse2">
+                                    <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7" style="color: #000;"><strong>What exactly do I get for my investment?</strong></h6>
+                                    <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                                </a>
+
+                            </div>
+                            <div id="collapse2_8" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">You'll receive a professional, adversarial security assessment focused on identifying real, exploitable risks in your protocol. Depending on the engagement scope, this includes structured attack-surface analysis, systematic testing using VectorGuard Labs' methodology, clear findings with severity and impact explanations, and concrete remediation guidance. Where exploitation is realistically demonstrable, findings are supported with technical evidence to validate risk, helping your team remediate issues confidently and prepare for a formal audit without surprises.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-header" role="tab" id="headingThree">
+                                <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_8"
+aria-expanded="false" aria-controls="collapse3">
+                                    <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Do you work with all blockchain platforms or just Ethereum-based
+blockchains (EVM)?</strong></h6>
+                                    <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse3_8" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">VectorGuard Labs does preliminary security assessments on Solidity, Vyper, Rust, Cairo, and Move smart contracts across EVM chains and other ecosystems. The 15-phase framework adapts to each stack using the strongest available validation method on that chain (forks, localnets, test-validators, or execution traces).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-header" role="tab" id="headingThree">
+                                <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse4_8"
+aria-expanded="false" aria-controls="collapse4">
+                                    <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>What information does VectorGuard Labs need to get started?</strong></h6>
+                                    <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse4_8" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">We need your smart contract source code. That's it. No test files, no documentation, etc. We can work with private GitHub repos or secure file transfers. Like attackers, we won't read your documentation, tokenomics, or whitepapers.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-header" role="tab" id="headingThree">
+                                <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse5_8"
+aria-expanded="false" aria-controls="collapse5">
+                                   <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>How do I know my code and intellectual property will be
+protected?</strong></h6>
+                                        <span class="mbr-iconfont mobi-mbri-arrow-down mobi-mbri"></span>
+                                </a>
+                            </div>
+                            <div id="collapse5_8" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">
+                                       We sign comprehensive NDAs before accessing any code and maintain strict confidentiality protocols. Your code is stored in encrypted,
+access-controlled environments and is deleted after engagement completion. Our role is to help you harden and protect your codebase, not to reuse or disclose your intellectual property.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-header" role="tab" id="headingThree">
+                                <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse6_8"
+aria-expanded="false" aria-controls="collapse6">
+                                    <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>How long does a typical pre-audit security review take?</strong></h6>
+                                    <span class="mbr-iconfont mobi-mbri-arrow-down mobi-mbri"></span>
+                                </a>
+                            </div>
+                            <div id="collapse6_8" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">
+                                       Tier 1 (Small Protocol) assessments typically complete within 1-2 weeks. Tier 2 (Medium Protocol) takes 2-3 weeks. Tier 3 (Complex Protocol) requires 3-5 weeks. Tier 4 (Enterprise) timelines are custom-scoped based on complexity. All timelines include detailed reports highlighting vulnerabilities, attack scenarios, and recommended fixes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section data-bs-version="5.1" class="content16 cid-uOHD9SosQG" id="content16-9" style="background: #fff; padding: 80px 0;">
+
+
+
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+
+                <div id="bootstrap-accordion_9" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_9" aria-expanded="false"
+ aria-controls="collapse1">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Will my protocol go through all 338 attack vectors?</strong></h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse1_9" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion"
+data-bs-parent="#bootstrap-accordion_9">
+                            <div class="panel-body">
+                                <p class="mbr-fonts-style panel-text display-4"><strong>No.</strong> The VectorGuard attack vectors represent a comprehensive threat model, not a checklist applied blindly. Your protocol is first analyzed to determine which vectors are actually relevant to its architecture, assets, and integrations. We then apply the applicable vectors rigorously and go deep on the areas that present the highest real-world exploit risk, rather than performing superficial checks where no realistic attack surface exists.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_9" aria-expanded="false"
+ aria-controls="collapse2">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Do you provide a guarantee or warranty on your findings?</strong></h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse2_9" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion"
+data-bs-parent="#bootstrap-accordion_9">
+                            <div class="panel-body">
+                                <p class="mbr-fonts-style panel-text display-4">
+                                    No security assessment can guarantee that <strong>all</strong> vulnerabilities are eliminated. What we provide is <strong>structured, adversarial, evidence-backed testing</strong> using the VectorGuard framework. Our goal is to dramatically reduce your risk, uncover realistic attack paths, and prepare you for formal audits—not to promise absolute immunity from future bugs or exploits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_9" aria-expanded="false"
+ aria-controls="collapse3">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>If my test comes back positive, can I deploy my contract to
+mainnet?</strong></h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse3_9" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion"
+data-bs-parent="#bootstrap-accordion_9">
+                            <div class="panel-body">
+                                <p class="mbr-fonts-style panel-text display-4"><strong>
+                                    No,</strong> <strong>VectorGuard Labs strongly recommend proceeding to a formal third-party audit before mainnet deployment.</strong> Our
+pre-audit assessment is designed to prepare you for a successful formal audit by identifying and fixing vulnerabilities early. The formal audit provides the final compliance
+certification needed for mainnet launch, and you should treat our work as a <strong>high-value, adversarial pre-stage</strong> not a replacement.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse4_9" aria-expanded="false"
+ aria-controls="collapse4">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>How do I know which VectorGuard tier is right for my protocol?</strong></h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse4_9" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion"
+data-bs-parent="#bootstrap-accordion_9">
+                            <div class="panel-body">
+                                <p class="mbr-fonts-style panel-text display-4">
+                                    <strong>Tier 1</strong> is ideal for simple, single-contract protocols under 1,000 LoC with no complex integrations.<br><br>
+                                    <strong>Tier 2</strong> fits protocols with multiple interacting contracts, oracle dependencies, or moderate complexity (1,000-5,000 LoC).<br><br>
+                                    <strong>Tier 3</strong> is designed for complex systems with multi-chain deployment, heavy DeFi integrations, or governance mechanics (5,000+ LoC).<br><br>
+                                    <strong>Tier 4</strong> is for enterprise-grade infrastructure requiring dedicated timelines and multiple review cycles.<br><br>
+                                    <strong>Not sure? Reach out with your repo link and we'll recommend the appropriate tier.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse5_9" aria-expanded="false"
+ aria-controls="collapse5">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>I'm ready to get started!! What payment forms do you accept?</strong></h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse5_9" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion"
+data-bs-parent="#bootstrap-accordion_9">
+                            <div class="panel-body">
+                                <p class="mbr-fonts-style panel-text display-4">VectorGuard Labs is crypto-native and accepts <strong>USDC on the BASE</strong>
+blockchain (RECOMMENDED)—no traditional banking delays or conversion fees. <br><br>Our payment address is
+<strong>0x993490281e8c9f90432a3D7dB677BeA27149f5F4.<br></strong><br>Please send us the <strong>transaction hash</strong> after payment for verification.<br><br></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="form5 cid-sFzDs3t9EG" id="form5-1m">
+
+
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Get in Touch!</strong></h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-7">Ready to start? Have questions? Tell us what's on your mind!</h4>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email"
+data-form-email="true" value="n3VdcvxBy6+IZi7Zvj3teK+A29F4vEN0jLeBkDR2YxcIrjVSyUVQ7n8Ya8wLKc9nfJtjY6K+F5GBpVaQLIfYJGyOih32s+4Vn6GV4Wbx1B/mJfC8pvBdCDLMgXotlcsR.KWSjZRB5yVucKPV/VrL
+NDaFfdYJClchJCe7PyUSiCBHCv/bdxDoyv5XJxG0JM+D2r3oycb3dA8c6dfIAnc1rcLMx8wttnIAbimB/GxY++rTA8gHqaN7ygda8w74b7afW">
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form! Someone will be in touch with you within 1
+business day.</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some
+                            problem!</div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-form5-1m">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="email">
+                            <input type="email" name="email" placeholder="E-mail" data-form-field="email" class="form-control" value="" id="email-form5-1m">
+                        </div>
+
+                        <div class="col-12 form-group mb-3" data-for="textarea">
+                            <textarea name="textarea" placeholder="Message" data-form-field="textarea" class="form-control" id="textarea-form5-1m"></textarea>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn"><button type="submit" class="btn btn-primary display-4">Send
+message</button></div>
+                    </div>
+</form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section data-bs-version="5.1" class="footer7 cid-uP4WLUjy4r" once="footers" id="footer7-a">
+
+
+
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                    © Copyright 2025 VectorGuard Labs - All Rights Reserved </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>
+  <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/ytplayer/index.js"></script>
+  <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  <script src="assets/formoid/formoid.min.js"></script>
+
+
+
+<input name="cookieData" type="hidden" data-cookie-cookiesAlertType='false' data-cookie-customDialogSelector='null' data-cookie-colorText='#424a4d' data-cookie-colorBg='rgb(255,
+255, 255)' data-cookie-opacityOverlay='0' data-cookie-bgOpacity='100' data-cookie-textButton='GOT IT' data-cookie-rejectText='REJECT' data-cookie-colorButton='#6592e6'
+data-cookie-rejectColor='#ffffff' data-cookie-colorLink='#424a4d' data-cookie-underlineLink='true' data-cookie-text="We use cookies to give you the best experience.">
+   <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon
+cm-icon-smallarrow-up"></i></a></div>
+  </body>
+</html>
