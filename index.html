@@ -206,7 +206,7 @@ type="text/css">
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 30px 0;">
                     <div style="background: rgba(255,107,107,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #ff0000;">
                         <h4 style="color: #ff0000; margin-bottom: 15px;"><strong>Adversarial, Evidence-First Mindset</strong></h4>
-                        <p style="color: #000; line-height: 1.6;">We don't just "review code" - we <strong>attempt to break it</strong> using the VectorGuard Labs 15-phase methodology, then back every Critical/High finding with <strong>exploit scripts, execution traces, and attacker balance deltas.</strong></p>
+                        <p style="color: #000; line-height: 1.6;">We don't just "review code" - we <strong>attempt to break it</strong> using the VectorGuard Labs 15-phase methodology, then back every Critical/High/Medium finding with <strong>exploit scripts, execution traces, and attacker balance deltas.</strong></p>
                     </div>
 
                     <div style="background: rgba(102,126,234,0.2); padding: 25px; border-radius: 12px; border-left: 4px solid #0066ff;">
@@ -272,7 +272,7 @@ type="text/css">
 
                 <div class="mbr-text mbr-fonts-style display-7" style="background: rgba(0,255,136,0.1); padding: 30px; border-radius: 15px;">
                     <ul style="color: #000; line-height: 1.8; font-size: 1.1em;">
-                        <li>Identify <strong>Critical and High impact paths</strong> that could realistically drain funds, corrupt state, or kill the protocol.</li>
+                        <li>Identify <strong>Critical, High, and Medium impact paths</strong> that could realistically drain funds, corrupt state, or kill the protocol.</li>
                         <li>Enter formal audits with <strong>fewer surprises, cleaner code, and exploit-backed pre-audit coverage</strong> reducing iteration and cost.</li>
                         <li>Build <strong>real security credibility</strong> with investors, formal auditors, and users by demonstrating adversarial testing, not just "we were audited."</li>
                         <li>Receive <strong>concrete remediation guidance, exploit scripts, and invariants</strong> your team can harden against and reuse in future testing.</li>
@@ -312,7 +312,7 @@ type="text/css">
                                     <strong>4.</strong> Run automated tools, perform line-by-line manual review, hunt for known vulnerability classes, and implement invariant-based fuzzing to expose hidden paths to invariant breaks.
                                 </div>
                                 <div>
-                                    <strong>5.</strong> Fork-based (or chain-appropriate) exploit testing for Critical/High findings, generating full exploit scripts and transaction identifiers with attacker balance deltas, state diffs, and rigorous false positive filtering.
+                                    <strong>5.</strong> Fork-based (or chain-appropriate) exploit testing for Critical/High/Medium findings, generating full exploit scripts and transaction identifiers with attacker balance deltas, state diffs, and rigorous false positive filtering.
                                 </div>
                             </div>
                         </div>
@@ -683,7 +683,7 @@ are $5,000 USDC each)</strong> so we can verify remediation effectiveness and ch
     <div class="container">
         <div class="mbr-section-head">
             <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2" style="color: #000;">
-                <strong>PRICING</strong><br><strong>(USDC)</strong></h3>
+                <strong>PRICING</strong><br><strong>(USD/USDC)</strong></h3>
             <p style="text-align: center; font-size: 1.1em; margin-top: 20px; color: #666;">Select the tier that best matches your protocol's complexity and scope</p>
         </div>
 
@@ -697,7 +697,7 @@ are $5,000 USDC each)</strong> so we can verify remediation effectiveness and ch
                             <p style="color: #666; margin: 5px 0 0 0; font-size: 0.95em;">&lt; 2,000 Lines of Code</p>
                         </div>
                         <div class="text-end">
-                            <div class="pricing-tier-price">12,500 USDC</div>
+                            <div class="pricing-tier-price">12,500</div>
                             <span class="pricing-tier-hours">~80-120 hours</span>
                         </div>
                     </div>
@@ -723,7 +723,7 @@ are $5,000 USDC each)</strong> so we can verify remediation effectiveness and ch
                             <p style="color: #666; margin: 5px 0 0 0; font-size: 0.95em;">2,001 - 5,000 Lines of Code</p>
                         </div>
                         <div class="text-end">
-                            <div class="pricing-tier-price">25,000 USDC</div>
+                            <div class="pricing-tier-price">25,000</div>
                             <span class="pricing-tier-hours">~120-180 hours</span>
                         </div>
                     </div>
@@ -749,7 +749,7 @@ are $5,000 USDC each)</strong> so we can verify remediation effectiveness and ch
                             <p style="color: #666; margin: 5px 0 0 0; font-size: 0.95em;">5,001 - 10,000 Lines of Code</p>
                         </div>
                         <div class="text-end">
-                            <div class="pricing-tier-price">50,000 USDC</div>
+                            <div class="pricing-tier-price">50,000</div>
                             <span class="pricing-tier-hours">~180-300 hours</span>
                         </div>
                     </div>
@@ -775,7 +775,7 @@ are $5,000 USDC each)</strong> so we can verify remediation effectiveness and ch
                             <p style="color: #666; margin: 5px 0 0 0; font-size: 0.95em;">10,001+ Lines of Code</p>
                         </div>
                         <div class="text-end">
-                            <div class="pricing-tier-price">75,000 USDC + 1 USDC/LoC</div>
+                            <div class="pricing-tier-price">75,000 + 1/LoC</div>
                             <span class="pricing-tier-hours" style="background: rgba(255,0,0,0.2);">Custom Timeline</span>
                         </div>
                     </div>
@@ -801,13 +801,13 @@ are $5,000 USDC each)</strong> so we can verify remediation effectiveness and ch
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
                         <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; text-align: center;">
                             <h6 style="color: #000; margin-bottom: 10px;"><strong>Post-Fix Reassessment</strong></h6>
-                            <p style="color: #ff0000; font-size: 1.5em; font-weight: bold; margin: 0;">7,000 USDC</p>
+                            <p style="color: #ff0000; font-size: 1.5em; font-weight: bold; margin: 0;">7,000</p>
                             <p style="color: #666; font-size: 0.9em; margin-top: 10px;">First reassessment FREE with any tier. Includes fix verification, regression checks, and updated report.</p>
                         </div>
                         <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px; text-align: center;">
                             <h6 style="color: #000; margin-bottom: 10px;"><strong>Payment Method</strong></h6>
-                            <p style="color: #0066ff; font-size: 1.1em; font-weight: bold; margin: 0;">USDC on BASE</p>
-                            <p style="color: #666; font-size: 0.9em; margin-top: 10px;"><b>Wallet: 0x993490281e8c9f90432a3D7dB677BeA27149f5F4</b></br>Send TX hash after payment for verification.</p>
+                            <p style="color: #0066ff; font-size: 1.1em; font-weight: bold; margin: 0;">VISA/MC/AMEX/DISC/USDC on BASE</p>
+                            <p style="color: #666; font-size: 0.9em; margin-top: 10px;"><b>Wallet (if paying USDC): 0x993490281e8c9f90432a3D7dB677BeA27149f5F4</b></br>Send TX hash after payment for verification.</p>
                         </div>
                     </div>
                 </div>
@@ -1023,8 +1023,8 @@ data-bs-parent="#bootstrap-accordion_9">
                         <div id="collapse5_9" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion"
 data-bs-parent="#bootstrap-accordion_9">
                             <div class="panel-body">
-                                <p class="mbr-fonts-style panel-text display-4">VectorGuard Labs is crypto-native and accepts <strong>USDC on the BASE</strong>
-blockchain (RECOMMENDED)—no traditional banking delays or conversion fees. <br><br>Our payment address is
+                                <p class="mbr-fonts-style panel-text display-4">VectorGuard Labs accepts VISA/MC/AMEX/DISC and <strong>USDC on the BASE</strong>
+blockchain.<br><br>If paying by USDC, our payment address is
 <strong>0x993490281e8c9f90432a3D7dB677BeA27149f5F4.<br></strong><br>Please send us the <strong>transaction hash</strong> after payment for verification.<br><br></p>
                             </div>
                         </div>
