@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VectorGuard Labs | Adversarial Smart Contract Security Assessments</title>
+  <meta name="description" content="VectorGuard Labs delivers adversarial pre-audit security assessments for Web3 protocols using the VectorGuard Pro 15-Phase Framework and 338-vector attack library.">
+  <meta name="keywords" content="smart contract security, Web3 audit, blockchain security, DeFi security, adversarial testing, pre-audit, smart contract audit">
+  <meta property="og:title" content="VectorGuard Labs | Adversarial Smart Contract Security">
+  <meta property="og:description" content="Adversarial pre-audit security assessments for Web3 protocols. 15-Phase Framework. 338 attack vectors. Exploit-backed findings.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vectorguardlabs.com">
+  <meta property="og:image" content="https://vectorguardlabs.com/assets/images/vguard-1-1024x1024.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VectorGuard Labs | Adversarial Smart Contract Security">
+  <meta name="twitter:description" content="Adversarial pre-audit security assessments for Web3 protocols.">
+  <meta name="twitter:image" content="https://vectorguardlabs.com/assets/images/vguard-1-1024x1024.png">
+  <link rel="icon" type="image/png" href="assets/images/vectorguardlabs-128x128.png">
+  <link rel="apple-touch-icon" href="assets/images/vectorguardlabs-128x128.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#" class="navbar__brand" aria-label="VectorGuard Labs home">
+        <img src="assets/images/vectorguardlabs-128x128.png" alt="" width="32" height="32">
+        <span>VectorGuard Labs</span>
+      </a>
+      <button class="navbar__toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="navbar__links" id="nav-links">
+        <a href="#why">Why Us</a>
+        <a href="#methodology">Methodology</a>
+        <a href="#framework">Framework</a>
+        <a href="#research">Research</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn--primary" style="padding:10px 22px;">Get in Touch</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="hero">
+    <div class="hero__content">
+      <img src="assets/images/vguard-horizontal.png" alt="VectorGuard Labs logo" class="hero__logo" style="width:auto;height:auto;max-width:400px;border-radius:0;" loading="eager">
+      <h1 class="hero__title">Adversarial Smart Contract Security</h1>
+      <p class="hero__subtitle">Pre-Audit Security Assessments for Web3 Protocols</p>
+      <p class="hero__desc">We stress, break, and validate your protocol using the VectorGuard Pro 15-Phase Framework and 338-vector attack library &mdash; before you ever talk to a Tier-1 audit firm.</p>
+      <div class="btn-group">
+        <a href="#contact" class="btn btn--primary">Get a Quote</a>
+        <a href="#methodology" class="btn btn--outline">See Our Approach</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+
+  <!-- Why VectorGuard Labs -->
+  <section class="section" id="why">
+    <div class="container">
+      <h2 class="section-title text-center">Why VectorGuard Labs Exists</h2>
+      <p class="section-subtitle text-center mx-auto">Web3 protocols are attacked by real adversaries &mdash; not by linters. We go further than traditional audits.</p>
+
+      <div class="grid grid--2" style="margin-bottom:48px;">
+        <div>
+          <p style="font-size:1.02rem;line-height:1.8;color:#444;">Web3 protocols face <strong>MEV searchers, flash loan attackers, oracle manipulators, and governance abusers</strong>. Traditional audits often stop at static analysis, pattern matching, and PDF reports. They rarely behave like an attacker trying to <strong>break your protocol on a forked mainnet and prove it with a TX hash.</strong></p>
+          <p style="font-size:1.02rem;line-height:1.8;color:#444;margin-top:16px;">VectorGuard Labs delivers <strong>adversarial pre-audit security assessments</strong> using its <strong>15-Phase Framework + 338-vector attack library</strong> to stress, break, and validate your protocol before you ever talk to a Tier-1 audit firm.</p>
+        </div>
+        <div>
+          <ul class="benefits-list">
+            <li>Identify <strong>Critical, High, and Medium impact paths</strong> that could drain funds, corrupt state, or kill the protocol.</li>
+            <li>Enter formal audits with <strong>fewer surprises, cleaner code, and exploit-backed coverage</strong>, reducing iteration and cost.</li>
+            <li>Build <strong>real security credibility</strong> with investors, auditors, and users by demonstrating adversarial testing.</li>
+            <li>Receive <strong>concrete remediation guidance, exploit scripts, and invariants</strong> to harden against and reuse in future testing.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="section-title text-center" style="font-size:2rem;margin-top:40px;">What Makes Us Different</h3>
+      <div class="grid grid--3" style="margin-top:28px;">
+        <div class="card card--accent-red">
+          <h4 class="card__title">Adversarial, Evidence-First Mindset</h4>
+          <p class="card__text">We don't just "review code" &mdash; we attempt to break it using the VectorGuard Labs 15-phase methodology, then back every Critical/High/Medium finding with exploit scripts, execution traces, and attacker balance deltas.</p>
+        </div>
+        <div class="card card--accent-blue">
+          <h4 class="card__title">338 Real-World Attack Vectors</h4>
+          <p class="card__text">Reentrancy, MEV, oracle and bridge manipulation, governance capture, rounding drift, AA/EIP-4337, hooks, cross-chain desyncs, economic attacks &mdash; modeled from billions in real exploits.</p>
+        </div>
+        <div class="card card--accent-orange">
+          <h4 class="card__title">Exploit-Backed Findings</h4>
+          <p class="card__text">Every meaningful finding includes root cause analysis, exploit narrative, reproduction steps, and (when feasible) a fork-based PoC showing before/after balances, invariant violation, and protocol state diffs.</p>
+        </div>
+        <div class="card card--accent-green">
+          <h4 class="card__title">Risk-Based, Time-Disciplined Execution</h4>
+          <p class="card__text">We prioritize attack paths that can actually kill your protocol or users, combining automated tooling, invariant testing, and exploit development into a tight, goal-driven engagement window.</p>
+        </div>
+        <div class="card card--accent-purple">
+          <h4 class="card__title">Pre-Audit, Not Audit</h4>
+          <p class="card__text">We don't compete with Trail of Bits, OpenZeppelin, Certik, or Cyfrin. We prepare you for them &mdash; so formal auditors see a hardened codebase, real exploit coverage, and a protocol that takes security seriously.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Validation & Exploit Approach -->
+  <section class="section section--light" id="methodology">
+    <div class="container">
+      <h2 class="section-title text-center">Our Validation &amp; Exploit Approach</h2>
+      <p class="section-subtitle text-center mx-auto">How we find, prove, and document the vulnerabilities that matter.</p>
+      <div class="grid grid--3">
+        <div class="card">
+          <h4 class="card__title">Semantic &amp; Invariant-Driven Analysis</h4>
+          <p class="card__text">We model what your protocol is supposed to do, then define hard invariants around solvency, share accounting, access control, cross-chain state, and economic safety &mdash; and attempt to violate them.</p>
+        </div>
+        <div class="card">
+          <h4 class="card__title">Automated Analysis &amp; Fuzzing</h4>
+          <p class="card__text">Static analysis, mutation tests, symbolic execution, stateless and stateful fuzzing, property tests, and invariant tests across high-risk flows to push your contracts into adversarial edge cases.</p>
+        </div>
+        <div class="card">
+          <h4 class="card__title">DeFi Attack Surface Coverage</h4>
+          <p class="card__text">Coverage across lending, AMMs, vaults, staking, governance, liquidations, LSTs, AA, hooks, and bridges &mdash; mirroring how real attackers chain protocols together for maximum impact.</p>
+        </div>
+        <div class="card">
+          <h4 class="card__title">Fork-Based Attack Simulation</h4>
+          <p class="card__text">Where chains support it, we use mainnet forks to simulate attacks with real liquidity, oracle feeds, and gas constraints, capturing TX hashes and execution traces as proof.</p>
+        </div>
+        <div class="card">
+          <h4 class="card__title">Economic &amp; Game-Theoretic Modeling</h4>
+          <p class="card__text">We analyze profitability and incentives for rational attackers &mdash; flash loan windows, oracle manipulation profit, governance capture ROI, and long-horizon economic attacks.</p>
+        </div>
+        <div class="card">
+          <h4 class="card__title">Integration &amp; Cross-Chain Risk</h4>
+          <p class="card__text">We investigate how your protocol can be broken via integrated protocols, bridges, oracles, AA, and hooks &mdash; not just within your own repo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 338-Vector Attack Framework -->
+  <section class="section" id="framework">
+    <div class="container">
+      <h2 class="section-title text-center">The 338-Vector Attack Framework</h2>
+      <p class="section-subtitle text-center mx-auto">Driven by the VectorGuard Pro 15-Phase Framework and a 338-vector attack library built from real exploits, not theory.</p>
+      <div class="framework-phases">
+        <div class="framework-phase" style="border-left:4px solid var(--vg-red);">
+          <div class="framework-phase__header">Phase 1 &ndash; 5: Reconnaissance &amp; Exploit Validation</div>
+          <div class="framework-phase__items">
+            <div class="framework-phase__item"><strong>1.</strong> Manual review, map architecture, identify roles/permissions, and analyze upgradeability patterns.</div>
+            <div class="framework-phase__item"><strong>2.</strong> Identify threat actors (MEV, flash loan attackers, malicious integrators) and challenge all trust assumptions.</div>
+            <div class="framework-phase__item"><strong>3.</strong> Define measurable security invariants (Financial, Access Control, State Consistency, Cross-Chain, Governance).</div>
+            <div class="framework-phase__item"><strong>4.</strong> Run automated tools, line-by-line manual review, hunt for vulnerability classes, and implement invariant-based fuzzing.</div>
+            <div class="framework-phase__item"><strong>5.</strong> Fork-based exploit testing for Critical/High/Medium findings with full exploit scripts, TX identifiers, and state diffs.</div>
+          </div>
+        </div>
+        <div class="framework-phase" style="border-left:4px solid var(--vg-blue);">
+          <div class="framework-phase__header">Phase 6 &ndash; 10: Deep Analysis &amp; Attack Chaining</div>
+          <div class="framework-phase__items">
+            <div class="framework-phase__item"><strong>6.</strong> Model protocol behavior using functional specs, state-machine diagrams, and Pre/Post Conditions.</div>
+            <div class="framework-phase__item"><strong>7.</strong> Analyze attacker incentives, arbitrage paths, flash loan profitability, and multi-step economic attacks.</div>
+            <div class="framework-phase__item"><strong>8.</strong> Gas profiling, unbounded loop detection, and gas-griefing analysis for DoS vectors.</div>
+            <div class="framework-phase__item"><strong>9.</strong> Multi-user interaction simulation, race conditions, time-advanced scenarios, and stateful fuzzing.</div>
+            <div class="framework-phase__item"><strong>10.</strong> Combine vulnerabilities into full red-team attack chains that escalate to Critical impact.</div>
+          </div>
+        </div>
+        <div class="framework-phase" style="border-left:4px solid var(--vg-green);">
+          <div class="framework-phase__header">Phase 11 &ndash; 15: Verification &amp; Reporting</div>
+          <div class="framework-phase__items">
+            <div class="framework-phase__item"><strong>11.</strong> Verify fixes, check for regressions, analyze new attack surfaces, confirm storage layout stability.</div>
+            <div class="framework-phase__item"><strong>12.</strong> Formal verification using symbolic execution, property-based testing, and assertions.</div>
+            <div class="framework-phase__item"><strong>13.</strong> Strict severity classification with root cause, exploitability, impact, and quantified risk.</div>
+            <div class="framework-phase__item"><strong>14.</strong> Final coverage review &mdash; reassess severities, cross-check attack surfaces, map to threat model.</div>
+            <div class="framework-phase__item"><strong>15.</strong> Generate detailed report bundle and hand off as a pre-audit hardening package.</div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:40px;">
+        <a href="https://pavondunbar.github.io/VectorGuard-Labs-Attack-Vector-Suite/" target="_blank" rel="noopener noreferrer" class="cta-link">View Complete 338-Vector Attack Suite Documentation &rarr;</a>
+        <p style="margin-top:12px;font-size:0.88rem;color:var(--vg-gray);">Framework derived from thousands of real-world exploits. Continuously updated as new attack patterns emerge.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Trust Assurance -->
+  <section class="section section--light" id="trust">
+    <div class="container">
+      <h2 class="section-title text-center">Why You Can Trust VectorGuard Labs Assessments</h2>
+      <div style="max-width:800px;margin:0 auto;">
+        <p style="font-size:1.05rem;line-height:1.7;color:#444;margin-bottom:20px;">Unlike speculative scanners or AI-driven tools that exaggerate risk, VectorGuard Labs operates on a strict <strong>validated-only reporting model</strong>.</p>
+        <ul class="assurance-list">
+          <li><strong>No fabricated vulnerabilities.</strong> If an exploit is not proven or demonstrable, it does not enter your report.</li>
+          <li><strong>No severity inflation.</strong> Findings must be economically and technically viable to be considered real.</li>
+          <li><strong>No theory-only issues.</strong> Missing features or stylistic disagreements are not misrepresented as vulnerabilities.</li>
+          <li><strong>No "busywork reports."</strong> If a protocol is sound, we explicitly state: <em>"No Actionable Risks. Ready for Formal Audit."</em></li>
+        </ul>
+        <p style="font-size:1.02rem;line-height:1.7;color:#444;margin-top:20px;">This guarantee is enforced through our <strong>Phase-0 grounding logic, proof-first methodology, hypothesis rejection controls, and evidence-required reporting standards.</strong></p>
+        <p style="font-size:1.05rem;line-height:1.7;color:#333;margin-top:20px;font-weight:700;">VectorGuard Labs delivers truth, not theatrics &mdash; so you can walk into a formal audit confident that every finding is real, defensible, and validated.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Published Research -->
+  <section class="section" id="research">
+    <div class="container">
+      <h2 class="section-title text-center">Published Security Research</h2>
+      <p class="section-subtitle text-center mx-auto">Deep-dive exploit analysis demonstrating how VectorGuard Labs methodology catches real vulnerabilities.</p>
+      <div class="research-grid">
+        <div class="research-card">
+          <div class="research-card__header research-card__header--critical">
+            <div class="research-card__amount">$4.13M</div>
+            <div class="research-card__label">Flash Loan Oracle Manipulation</div>
+          </div>
+          <div class="research-card__body">
+            <h4 class="research-card__title">How VectorGuard Labs Would Have Prevented the Makina Finance Exploit</h4>
+            <p class="research-card__desc">Technical breakdown of the January 2026 Makina Finance hack. Analysis covers permissionless oracle functions, spot price dependency vulnerabilities, and Weiroll integration exposure that enabled a single-transaction $4.13M extraction.</p>
+            <a href="https://medium.com/@pavondunbar/4-13-million-gone-in-one-transaction-how-vectorguard-labs-would-have-prevented-the-makina-718613ad4e37" target="_blank" rel="noopener noreferrer" class="research-card__link">Read Full Analysis</a>
+          </div>
+        </div>
+        <div class="research-card">
+          <div class="research-card__header research-card__header--high">
+            <div class="research-card__amount">$2.7M</div>
+            <div class="research-card__label">Malicious Maintenance Attack</div>
+          </div>
+          <div class="research-card__body">
+            <h4 class="research-card__title">When Maintenance Turns Malicious: How VectorGuard Labs Would Have Stopped Aevo's $2.7M Loss</h4>
+            <p class="research-card__desc">Analysis of how routine maintenance operations were exploited to drain $2.7M from Aevo. Covers access control failures, privileged function abuse, and the attack vectors our methodology would have flagged pre-deployment.</p>
+            <a href="https://medium.com/@pavondunbar/when-maintenance-turns-malicious-how-vectorguard-labs-would-have-stopped-aevos-2-7m-aae1fe148dbd" target="_blank" rel="noopener noreferrer" class="research-card__link">Read Full Analysis</a>
+          </div>
+        </div>
+        <div class="research-card">
+          <div class="research-card__header research-card__header--economic">
+            <div class="research-card__amount">Economic</div>
+            <div class="research-card__label">Mathematical Invariant Failure</div>
+          </div>
+          <div class="research-card__body">
+            <h4 class="research-card__title">When the Math Guarantees Failure: VectorGuard Labs Uncovers a DeFi Economic Time Bomb</h4>
+            <p class="research-card__desc">Original research exposing how flawed economic assumptions create guaranteed failure conditions over time. Demonstrates our game-theoretic and incentive analysis methodology for catching vulnerabilities that static analysis misses.</p>
+            <a href="https://medium.com/@pavondunbar/when-the-math-guarantees-failure-vectorguard-labs-uncovers-a-defi-economic-time-bomb-36bda142c5aa" target="_blank" rel="noopener noreferrer" class="research-card__link">Read Full Analysis</a>
+          </div>
+        </div>
+        <div class="research-card">
+          <div class="research-card__header research-card__header--historical">
+            <div class="research-card__amount">$197M</div>
+            <div class="research-card__label">Historical Exploit Prevention</div>
+          </div>
+          <div class="research-card__body">
+            <h4 class="research-card__title">Why VectorGuard Labs Would Have Saved $197M</h4>
+            <p class="research-card__desc">Retrospective analysis mapping VectorGuard's 15-Phase Framework against a major historical DeFi exploit. Demonstrates exactly which phases would have caught the vulnerability and how our attack vector library covers this class of exploit.</p>
+            <a href="https://medium.com/@pavondunbar/why-vectorguard-labs-would-have-saved-197m-b6bd33ff478d" target="_blank" rel="noopener noreferrer" class="research-card__link">Read Full Analysis</a>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:36px;text-align:center;padding:20px;background:var(--vg-gray-light);border-radius:var(--vg-radius);border:1px solid rgba(0,102,255,0.2);">
+        <p style="margin:0;font-size:0.95rem;color:#444;"><strong style="color:var(--vg-blue);">Verified Security Researcher</strong> &mdash; Active participant in competitive audit contests with validated findings on <a href="https://audits.sherlock.xyz/" target="_blank" rel="noopener noreferrer">Sherlock</a></p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Meet Your Researcher -->
+  <section class="section section--light" id="researcher">
+    <div class="container">
+      <h2 class="section-title text-center">Meet Your Researcher</h2>
+      <div class="researcher">
+        <img src="assets/images/pavon.jpeg" alt="Pavon Dunbar, Founder of VectorGuard Labs" class="researcher__photo" width="260" height="260" loading="lazy">
+        <div class="researcher__bio">
+          <h3 class="researcher__name">Pavon Dunbar</h3>
+          <p class="researcher__role">Founder, VectorGuard Labs</p>
+          <p class="researcher__text"><strong>8 years in blockchain development. 2 years in smart contract security research.</strong> I've spent nearly a decade building in Web3 and the last two years breaking it &mdash; first through internal security work, then through competitive bug bounty contests on platforms like Sherlock.</p>
+          <p class="researcher__text">My approach is simple: <strong>think like an attacker, document like an engineer, and deliver findings that are proven, not speculated.</strong> Every vulnerability I report comes with evidence &mdash; exploit scripts, transaction traces, and economic impact analysis.</p>
+          <p class="researcher__text">I hold a degree from <strong>Xavier University of Louisiana</strong> and have dedicated my career to making Web3 protocols more secure before they reach mainnet.</p>
+          <div class="social-links">
+            <a href="https://github.com/pavondunbar" target="_blank" rel="noopener noreferrer" class="social--github" aria-label="GitHub">
+              <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/pavondunbar" target="_blank" rel="noopener noreferrer" class="social--linkedin" aria-label="LinkedIn">
+              <svg viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://x.com/pavondunbar" target="_blank" rel="noopener noreferrer" class="social--x" aria-label="X (Twitter)">
+              <svg viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/></svg>
+              X
+            </a>
+            <a href="https://linktr.ee/pavondunbar" target="_blank" rel="noopener noreferrer" class="social--web" aria-label="Linktree">
+              <svg viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/></svg>
+              Website
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Deliverables -->
+  <section class="section" id="deliverables">
+    <div class="container">
+      <h2 class="section-title text-center">Comprehensive, Exploit-Focused Security Report</h2>
+      <p class="section-subtitle text-center mx-auto">Every engagement produces a structured, adversarial report bundle designed to get you ready for Tier-1 audits.</p>
+      <div class="deliverables-grid">
+        <div class="deliverable-card">
+          <h4 class="deliverable-card__title">Core Deliverables</h4>
+          <ul class="deliverable-card__list">
+            <li><strong>Executive Summary</strong> &mdash; High-level risk narrative for founders, investors, and stakeholders.</li>
+            <li><strong>Technical Findings Report</strong> &mdash; Detailed vulnerability writeups with severity ratings, impact, and exploit reasoning.</li>
+            <li><strong>Attack Scenarios &amp; Threat Chains</strong> &mdash; Multi-step exploit stories mirroring real attacker approaches.</li>
+            <li><strong>Exploit Artifacts (When Applicable)</strong> &mdash; Scripts, TX hashes, state diffs, and invariant violations.</li>
+            <li><strong>Remediation &amp; Hardening Guidance</strong> &mdash; Concrete fixes and defensive design recommendations, prioritized by risk.</li>
+            <li><strong>VectorGuard Coverage Overview</strong> &mdash; Summary of attack categories and phases exercised.</li>
+          </ul>
+        </div>
+        <div class="deliverable-card">
+          <h4 class="deliverable-card__title">Additional Analysis (When Applicable)</h4>
+          <ul class="deliverable-card__list">
+            <li><strong>Frontend Security Assessment</strong> &mdash; Web UI and client-side risks affecting contract interactions.</li>
+            <li><strong>Economic &amp; Tokenomics Review</strong> &mdash; Incentive alignment and economic attack viability.</li>
+            <li><strong>Integration &amp; Dependency Risk</strong> &mdash; External protocol, oracle, AA, hook, and bridge analysis.</li>
+            <li><strong>Governance &amp; Control Structure</strong> &mdash; Admin, multisig, DAO, and upgrade mechanics scrutiny.</li>
+            <li><strong>Cross-Chain Security Review</strong> &mdash; Bridge flows, message passing, and desync risk.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="commitment">
+        <p class="commitment__text">"We don't ship vague opinions. We deliver adversarial, evidence-backed analysis using the VectorGuard 15-Phase Framework and 338-vector library, so you can walk into a formal audit with a hardened codebase, real exploit coverage, and a clear remediation plan."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="section section--light">
+    <div class="container">
+      <div class="mission-block">
+        <div class="mission-block__item">
+          <div class="mission-block__label">Our Mission</div>
+          <p class="mission-block__text">To bring adversarial-grade security to Web3 before attackers do. We focus on pre-audit, exploit-driven assessments that find and validate the types of issues that actually get exploited in production.</p>
+        </div>
+        <div class="mission-block__item">
+          <div class="mission-block__label">Our Approach</div>
+          <p class="mission-block__text">We combine structured, 15-phase methodology with the VectorGuard 338-vector attack library, fork-based exploit validation (where supported), and invariant/economic modeling to stress your protocol like a real attacker would.</p>
+        </div>
+        <div class="mission-block__item">
+          <div class="mission-block__label">Pre-Audit Focus</div>
+          <p class="mission-block__text">Our role is to prepare you for formal audits &mdash; not replace them &mdash; by helping you fix the highest-risk attack paths early, reduce back-and-forth with audit firms, and show users that you take security seriously.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Assessment Process -->
+  <section class="section" id="process">
+    <div class="container">
+      <h2 class="section-title text-center">Our Security Assessment Process</h2>
+      <p class="section-subtitle text-center mx-auto">A structured, three-stage view of how we apply the 15-phase VectorGuard framework to your protocol.</p>
+      <div class="grid grid--3">
+        <div class="phase-card">
+          <span class="phase-card__badge phase-card__badge--red">Stage 1</span>
+          <h3 class="phase-card__title">Recon, Threat Modeling &amp; Invariants</h3>
+          <p class="phase-card__duration">Duration: varies by tier</p>
+          <ul class="phase-card__list">
+            <li><strong>Code &amp; Architecture Review:</strong> Understand protocol intent, value flows, and upgradeability patterns.</li>
+            <li><strong>Threat Modeling:</strong> Identify attacker types and challenge trust assumptions.</li>
+            <li><strong>Attack Surface Mapping:</strong> Enumerate critical functions, roles, and external dependencies.</li>
+            <li><strong>Invariant Definition:</strong> Establish solvency, accounting, access control, and cross-chain invariants.</li>
+          </ul>
+        </div>
+        <div class="phase-card">
+          <span class="phase-card__badge phase-card__badge--orange">Stage 2</span>
+          <h3 class="phase-card__title">Deep Exploit &amp; Scenario Development</h3>
+          <p class="phase-card__duration">Duration: varies by tier</p>
+          <ul class="phase-card__list">
+            <li><strong>VectorGuard Testing:</strong> Apply relevant subsets of the 338 attack vectors to your specific design.</li>
+            <li><strong>Fuzzing &amp; Simulation:</strong> Stateless/stateful fuzzing and scenario tests for multi-step attacks.</li>
+            <li><strong>Economic Analysis:</strong> Evaluate profitability and feasibility of attacks including flash loans.</li>
+            <li><strong>Exploit Development:</strong> Build chain-appropriate PoCs (fork-based when possible) to validate impact.</li>
+          </ul>
+        </div>
+        <div class="phase-card">
+          <span class="phase-card__badge phase-card__badge--green">Stage 3</span>
+          <h3 class="phase-card__title">Evidence, Reporting &amp; Pre-Audit Hardening</h3>
+          <p class="phase-card__duration">Duration: varies by tier</p>
+          <ul class="phase-card__list">
+            <li><strong>Finding Documentation:</strong> Structured, exploit-informed findings organized by severity.</li>
+            <li><strong>Severity Assessment:</strong> Map each issue to business impact and economic consequence.</li>
+            <li><strong>Remediation Plan:</strong> Prioritized fixes and guidance plus a clear path for retesting.</li>
+            <li><strong>Audit Preparation:</strong> Deliver a pre-audit package to accelerate formal auditor review.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section section--light">
+    <div class="container">
+      <h2 class="section-title text-center">How It Works</h2>
+      <p class="section-subtitle text-center mx-auto">From first contact to formal audit readiness in 9 clear steps.</p>
+      <div class="steps">
+        <div class="step"><div class="step__number">1</div><div class="step__content"><h4 class="step__title">Reach Out</h4><p class="step__text">Use the contact form below or email us at <strong>pavon@vectorguardlabs.com</strong>. Provide your GitHub repo link so we can assess scope, protocol type, and risk profile.</p></div></div>
+        <div class="step"><div class="step__number">2</div><div class="step__content"><h4 class="step__title">Receive Your Quote</h4><p class="step__text">Within 24&ndash;48 hours, you'll receive a detailed quote and timeline based on your protocol's complexity, codebase size, attack surface, and chain ecosystem.</p></div></div>
+        <div class="step"><div class="step__number">3</div><div class="step__content"><h4 class="step__title">Sign Agreements</h4><p class="step__text">Review and sign our service agreement and NDA to protect your intellectual property.</p></div></div>
+        <div class="step"><div class="step__number">4</div><div class="step__content"><h4 class="step__title">Make Payment</h4><p class="step__text">VectorGuard Labs accepts <strong>Visa/MC/AMEX/DISC</strong> and <strong>USDC on the BASE blockchain</strong>. Payment details will be provided in your invoice after signing.</p></div></div>
+        <div class="step"><div class="step__number">5</div><div class="step__content"><h4 class="step__title">Assessment Begins</h4><p class="step__text">We begin a comprehensive adversarial assessment using the VectorGuard 15-phase framework and 338-vector library tailored to your protocol and chain.</p></div></div>
+        <div class="step"><div class="step__number">6</div><div class="step__content"><h4 class="step__title">Receive Results</h4><p class="step__text">Within the agreed timeframe, you'll receive a comprehensive report bundle covering findings, exploit narratives, PoC artifacts (where possible), and prioritized remediation guidance.</p></div></div>
+        <div class="step"><div class="step__number">7</div><div class="step__content"><h4 class="step__title">Mitigate Vulnerabilities</h4><p class="step__text">Work with your team to implement recommended fixes. Use our findings, invariants, and exploit scripts as a hardening checklist.</p></div></div>
+        <div class="step"><div class="step__number">8</div><div class="step__content"><h4 class="step__title">Retesting</h4><p class="step__text">Submit your fixed codebase for <strong>one complimentary retest</strong> (additional retests are $3,500 each) to verify remediation effectiveness and check for regressions.</p></div></div>
+        <div class="step"><div class="step__number">9</div><div class="step__content"><h4 class="step__title">Formal Audit Ready</h4><p class="step__text">With vulnerabilities addressed and exploit paths analyzed, your protocol is positioned for a successful formal audit with higher confidence and fewer surprises.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Trust Banner -->
+  <section class="section" style="padding:40px 0;">
+    <div class="container">
+      <div class="trust-banner">
+        <div class="trust-banner__item">
+          <strong>Verified Researcher</strong>
+          <p>Confirmed vulnerability findings on <a href="https://audits.sherlock.xyz/" target="_blank" rel="noopener noreferrer">Sherlock</a></p>
+        </div>
+        <div class="trust-banner__divider" aria-hidden="true"></div>
+        <div class="trust-banner__item">
+          <strong>Published Exploit Analysis</strong>
+          <p><a href="https://pavondunbar.github.io/Makina-Hack-Rekt-News-CVE-Report/" target="_blank" rel="noopener noreferrer">Makina Finance Oracle Exploit ($4.13M)</a></p>
+        </div>
+        <div class="trust-banner__divider" aria-hidden="true"></div>
+        <div class="trust-banner__item">
+          <strong>PoC-Validated Findings</strong>
+          <p>Every Critical/High finding backed by a runnable proof-of-concept</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section section--light" id="pricing">
+    <div class="container">
+      <h2 class="section-title text-center">Pricing (USD/USDC)</h2>
+      <p class="section-subtitle text-center mx-auto">Select the tier that best matches your protocol's complexity and scope.</p>
+      <div class="pricing-grid">
+        <!-- Tier 1 -->
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <div>
+              <h4 class="pricing-card__title">Tier 1: Small Protocol</h4>
+              <p class="pricing-card__loc">&lt; 2,000 Lines of Code</p>
+            </div>
+            <div style="text-align:right;">
+              <div class="pricing-card__price">$7,000</div>
+              <span class="pricing-card__duration">5&ndash;7 business days</span>
+            </div>
+          </div>
+          <ul class="pricing-card__features">
+            <li>Single-chain deployment</li>
+            <li>No complex integrations</li>
+            <li>Manual code review with invariant testing and PoC-validated findings</li>
+            <li>Exploit-backed findings report</li>
+            <li>One complimentary retest included</li>
+          </ul>
+          <div class="pricing-card__ideal"><strong>Ideal for:</strong> Simple vaults, ERC-20 tokens, basic staking contracts, single-purpose protocols</div>
+        </div>
+        <!-- Tier 2 -->
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <div>
+              <h4 class="pricing-card__title">Tier 2: Medium Protocol</h4>
+              <p class="pricing-card__loc">2,001 &ndash; 5,000 Lines of Code</p>
+            </div>
+            <div style="text-align:right;">
+              <div class="pricing-card__price">$13,000</div>
+              <span class="pricing-card__duration">7&ndash;14 business days</span>
+            </div>
+          </div>
+          <ul class="pricing-card__features">
+            <li>Multiple contracts with interactions</li>
+            <li>Oracle integrations supported</li>
+            <li>Economic attack modeling included</li>
+            <li>Fork-based exploit validation</li>
+            <li>Integration analysis and economic attack modeling</li>
+            <li>One complimentary retest included</li>
+          </ul>
+          <div class="pricing-card__ideal"><strong>Ideal for:</strong> Lending protocols, AMMs, yield aggregators, NFT marketplaces with DeFi mechanics</div>
+        </div>
+        <!-- Tier 3 -->
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <div>
+              <h4 class="pricing-card__title">Tier 3: Complex Protocol</h4>
+              <p class="pricing-card__loc">5,001 &ndash; 10,000 Lines of Code</p>
+            </div>
+            <div style="text-align:right;">
+              <div class="pricing-card__price">$25,000</div>
+              <span class="pricing-card__duration">14&ndash;21 business days</span>
+            </div>
+          </div>
+          <ul class="pricing-card__features">
+            <li>Multi-chain or L2 deployment</li>
+            <li>Heavy DeFi integrations</li>
+            <li>Governance + upgradeability analysis</li>
+            <li>Cross-chain security review</li>
+            <li>Cross-contract analysis, governance review, and cross-chain testing</li>
+            <li>One complimentary retest included</li>
+          </ul>
+          <div class="pricing-card__ideal"><strong>Ideal for:</strong> Full DeFi stacks, cross-chain bridges, complex lending/borrowing systems, DAOs with treasury</div>
+        </div>
+        <!-- Tier 4 -->
+        <div class="pricing-card pricing-card--enterprise">
+          <div class="pricing-card__header">
+            <div>
+              <h4 class="pricing-card__title pricing-card__title--enterprise">Tier 4: Enterprise</h4>
+              <p class="pricing-card__loc">10,001+ Lines of Code</p>
+            </div>
+            <div style="text-align:right;">
+              <div class="pricing-card__price">Contact Us</div>
+              <span class="pricing-card__duration" style="background:rgba(255,0,0,0.1);color:#cc0000;">Scoped Per Engagement</span>
+            </div>
+          </div>
+          <ul class="pricing-card__features">
+            <li>Full-scope engagement &mdash; custom requirements</li>
+            <li>Dedicated assessment timeline</li>
+            <li>Multiple review cycles</li>
+            <li>Post-remediation verification included</li>
+            <li>Direct communication channel</li>
+            <li>Extended support period</li>
+          </ul>
+          <div class="pricing-card__ideal"><strong>Ideal for:</strong> Major DeFi protocols, institutional-grade infrastructure, high-TVL systems, protocols preparing for significant launches</div>
+        </div>
+      </div>
+
+      <!-- Additional Services -->
+      <div class="addons">
+        <h4 class="text-center" style="color:var(--vg-blue);font-size:1.15rem;">Additional Services</h4>
+        <div class="addons__grid">
+          <div class="addon-item">
+            <h5 class="addon-item__title">Additional Retests</h5>
+            <p class="addon-item__price">$3,500</p>
+            <p class="addon-item__desc">First retest included free. Additional retests include fix verification, regression checks, and updated report.</p>
+          </div>
+          <div class="addon-item">
+            <h5 class="addon-item__title">Payment Methods</h5>
+            <p class="addon-item__price" style="font-size:1.1rem;color:var(--vg-blue);">VISA/MC/AMEX/DISC or USDC on BASE</p>
+            <p class="addon-item__desc">Payment details provided in your invoice after signing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <h2 class="section-title text-center">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false"><span>How is this different from a formal audit?</span><span class="faq-item__icon" aria-hidden="true">+</span></button>
+          <div class="faq-item__answer" role="region"><p>VectorGuard Labs provides an <strong>adversarial pre-audit assessment</strong>. We behave like attackers: we threat model, define invariants, fuzz, simulate, and (where possible) build exploit PoCs on forks. Formal audits are typically compliance and assurance artifacts that happen after you've hardened your code. Our job is to prepare you so audit firms find fewer issues and you have stronger evidence of security.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false"><span>What exactly do I get for my investment?</span><span class="faq-item__icon" aria-hidden="true">+</span></button>
+          <div class="faq-item__answer" role="region"><p>You'll receive a professional, adversarial security assessment focused on identifying real, exploitable risks. Depending on the engagement scope, this includes structured attack-surface analysis, systematic testing using VectorGuard Labs' methodology, clear findings with severity and impact explanations, and concrete remediation guidance. Where exploitation is realistically demonstrable, findings are supported with technical evidence to validate risk.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false"><span>Do you work with all blockchain platforms or just EVM?</span><span class="faq-item__icon" aria-hidden="true">+</span></button>
+          <div class="faq-item__answer" role="region"><p>VectorGuard Labs performs security assessments on Solidity, Vyper, Rust, Cairo, and Move smart contracts across EVM chains and other ecosystems. The 15-phase framework adapts to each stack using the strongest available validation method on that chain (forks, localnets, test-validators, or execution traces).</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false"><span>What information do you need to get started?</span><span class="faq-item__icon" aria-hidden="true">+</span></button>
+          <div class="faq-item__answer" role="region"><p>We need your smart contract source code. That's it. No test files, no documentation, etc. We can work with private GitHub repos or secure file transfers. Like attackers, we won't read your documentation, tokenomics, or whitepapers.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false"><span>How do I know my code and intellectual property will be protected?</span><span class="faq-item__icon" aria-hidden="true">+</span></button>
+          <div class="faq-item__answer" role="region"><p>We sign comprehensive NDAs before accessing any code and maintain strict confidentiality protocols. Your code is stored in encrypted, access-controlled environments and is deleted after engagement completion. Our role is to help you harden and protect your codebase, not to reuse or disclose your intellectual property.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false"><span>How long does a typical pre-audit security review take?</span><span class="faq-item__icon" aria-hidden="true">+</span></button>
+          <div class="faq-item__answer" role="region"><p>Tier 1 (Small Protocol) assessments typically complete within 1&ndash;2 weeks. Tier 2 (Medium Protocol) takes 2&ndash;3 weeks. Tier 3 (Complex Protocol) requires 3&ndash;5 weeks. Tier 4 (Enterprise) timelines are custom-scoped based on complexity. All timelines include detailed reports highlighting vulnerabilities, attack scenarios, and recommended fixes.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false"><span>Will my protocol go through all 338 attack vectors?</span><span class="faq-item__icon" aria-hidden="true">+</span></button>
+          <div class="faq-item__answer" role="region"><p><strong>No.</strong> The VectorGuard attack vectors represent a comprehensive threat model, not a checklist applied blindly. Your protocol is first analyzed to determine which vectors are actually relevant to its architecture, assets, and integrations. We then apply the applicable vectors rigorously and go deep on the areas that present the highest real-world exploit risk.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false"><span>Do you provide a guarantee or warranty on your findings?</span><span class="faq-item__icon" aria-hidden="true">+</span></button>
+          <div class="faq-item__answer" role="region"><p>No security assessment can guarantee that all vulnerabilities are eliminated. What we provide is structured, adversarial, evidence-backed testing using the VectorGuard framework. Our goal is to dramatically reduce your risk, uncover realistic attack paths, and prepare you for formal audits &mdash; not to promise absolute immunity from future exploits.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false"><span>If my assessment comes back positive, can I deploy to mainnet?</span><span class="faq-item__icon" aria-hidden="true">+</span></button>
+          <div class="faq-item__answer" role="region"><p><strong>No.</strong> VectorGuard Labs strongly recommends proceeding to a formal third-party audit before mainnet deployment. Our pre-audit assessment is designed to prepare you for a successful formal audit. Treat our work as a high-value, adversarial pre-stage &mdash; not a replacement.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false"><span>How do I know which tier is right for my protocol?</span><span class="faq-item__icon" aria-hidden="true">+</span></button>
+          <div class="faq-item__answer" role="region"><p><strong>Tier 1</strong> is ideal for simple, single-contract protocols. <strong>Tier 2</strong> fits protocols with multiple interacting contracts or oracle dependencies. <strong>Tier 3</strong> is for complex systems with multi-chain deployment or governance mechanics. <strong>Tier 4</strong> is for enterprise-grade infrastructure requiring dedicated timelines. Not sure? Reach out with your repo link and we'll recommend the appropriate tier.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false"><span>What payment forms do you accept?</span><span class="faq-item__icon" aria-hidden="true">+</span></button>
+          <div class="faq-item__answer" role="region"><p>VectorGuard Labs accepts <strong>VISA/MC/AMEX/DISC</strong> and <strong>USDC on the BASE blockchain</strong>. Payment details will be provided in your invoice after signing the service agreement.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section class="section section--dark" id="contact">
+    <div class="container">
+      <h2 class="section-title text-center" style="color:var(--vg-white);">Get in Touch</h2>
+      <p class="section-subtitle text-center mx-auto" style="color:rgba(255,255,255,0.7);">Ready to start? Have questions? Tell us what's on your mind.</p>
+      <form class="contact-form" id="contact-form" action="https://formsubmit.co/pavon@vectorguardlabs.com" method="POST">
+        <input type="hidden" name="_cc" value="vectorguardlabs@gmail.com">
+        <input type="hidden" name="_subject" value="New VectorGuard Labs Inquiry">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://vectorguardlabs.com/#contact">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="form-group">
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" name="name" placeholder="Your name" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" name="email" placeholder="you@example.com" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" placeholder="Tell us about your protocol, include your GitHub repo link if available..." required></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2026 VectorGuard Labs &mdash; All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">&uarr;</button>
+
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "VectorGuard Labs",
+    "url": "https://vectorguardlabs.com",
+    "logo": "https://vectorguardlabs.com/assets/images/vectorguardlabs-128x128.png",
+    "description": "Adversarial pre-audit security assessments for Web3 protocols using the VectorGuard Pro 15-Phase Framework and 338-vector attack library.",
+    "email": ["pavon@vectorguardlabs.com", "vectorguardlabs@gmail.com"],
+    "founder": {"@type": "Person", "name": "Pavon Dunbar"},
+    "sameAs": ["https://github.com/pavondunbar", "https://linkedin.com/in/pavondunbar", "https://x.com/pavondunbar"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "How is this different from a formal audit?", "acceptedAnswer": {"@type": "Answer", "text": "VectorGuard Labs provides an adversarial pre-audit assessment. We behave like attackers: we threat model, define invariants, fuzz, simulate, and build exploit PoCs. Formal audits are compliance artifacts that happen after hardening. Our job is to prepare you so audit firms find fewer issues."}},
+      {"@type": "Question", "name": "Do you work with all blockchain platforms or just EVM?", "acceptedAnswer": {"@type": "Answer", "text": "VectorGuard Labs performs security assessments on Solidity, Vyper, Rust, Cairo, and Move smart contracts across EVM chains and other ecosystems."}},
+      {"@type": "Question", "name": "How long does a typical pre-audit security review take?", "acceptedAnswer": {"@type": "Answer", "text": "Tier 1 completes in 1-2 weeks. Tier 2 takes 2-3 weeks. Tier 3 requires 3-5 weeks. Tier 4 is custom-scoped."}}
+    ]
+  }
+  </script>
+
+  <!-- JavaScript -->
+  <script>
+  (function() {
+    'use strict';
+    var navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', function() {
+      navbar.classList.toggle('scrolled', window.pageYOffset > 50);
+    });
+
+    var toggle = document.querySelector('.navbar__toggle');
+    var navLinks = document.querySelector('.navbar__links');
+    toggle.addEventListener('click', function() {
+      var isOpen = navLinks.classList.toggle('active');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+    navLinks.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        navLinks.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    document.querySelectorAll('.faq-item__question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = btn.closest('.faq-item');
+        var isActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item.active').forEach(function(open) {
+          open.classList.remove('active');
+          open.querySelector('.faq-item__question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isActive) {
+          item.classList.add('active');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    var scrollBtn = document.getElementById('scroll-top');
+    window.addEventListener('scroll', function() {
+      scrollBtn.classList.toggle('visible', window.pageYOffset > 600);
+    });
+    scrollBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  })();
+  </script>
+</body>
+</html>
